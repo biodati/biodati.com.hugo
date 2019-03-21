@@ -1,0 +1,149 @@
+$main-color: #253661;
+$main-font: "Roboto, sans-serif";
+$secondary-color: goldenrod;
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+// temporary solution until I figure out why padding-top: 70px is randomly being applied to the body tag
+body {
+  padding-top: 0 !important;
+}
+
+// btn style
+.btn-main {
+  color: $main-color;
+  background-color: $secondary-color;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  .logo-label {
+    color: $main-color;
+  }
+  .nav {
+    .nav-item {
+      .nav-link {
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  }
+}
+// Section Landing
+.section-landing {
+  height: 90vh;
+  .box {
+    margin-top: 12%;
+    background-color: rgba(24, 35, 66, 0.6);
+    color: #fff;
+    padding: 10px;
+    #btn-subscribe {
+      border-radius: 20px;
+    }
+  }
+}
+// Section Overview
+.section-overview {
+  background-color: rgba(236, 237, 238, 0.88);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  #overview-demo {
+    background-color: rgba(24, 35, 66, 0.3);
+    padding: 25px;
+    .container-video {
+      margin-bottom: 1rem;
+      video {
+        height: auto;
+        width: 100%;
+      }
+    }
+    #btn-demo {
+      border-radius: 0;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 15px;
+      a {
+        color: $main-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+// Section Uses
+.section-uses-container {
+  .section-uses {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+    font-weight: 300;
+    .uses-container {
+      #uses-title {
+        font-size: 4rem;
+        font-weight: 300;
+        margin-bottom: 25px;
+      }
+
+      #uses-paragraph {
+        font-size: 1.8rem;
+      }
+
+      #uses-list {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.section-features-components {
+  background-color: rgba(236, 237, 238, 0.88);
+  padding: 15px;
+  .features-cards {
+    background-color: #fff;
+  }
+  .card-header {
+    color: #fff;
+    background-color: $main-color;
+  }
+  .component-cards {
+    background-color: #fff;
+  }
+}
+
+.section-focus-areas {
+  background-color: $main-color;
+  .focus-areas-title {
+    color: #fff;
+    font-size: 4rem;
+  }
+  .card-header {
+    color: #fff;
+    background-color: $main-color;
+    height: 6rem;
+  }
+}
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #1d2a4f;
+}
+
+.section-footer {
+  color: #9b9da2;
+  font-size: 0.7rem;
+  background-color: #f1f1f1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

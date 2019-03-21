@@ -1,0 +1,18 @@
+<header class="row banner-container">
+  <div class="col-md-6 align-items-center">
+    <a class="logo justify-content-center" href="#">
+      <img src="{{ $.Site.BaseURL }}/img/bioDati_logo_1.png" />
+    </a>
+  </div>
+  <div class="col-sm-6 collapse-navbar">
+    <ul class="nav justify-content-center">
+      {{/*  move nav into a separate partial  */}}
+      {{ $current := . }}
+      {{ range.Site.Menus.main }}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</header>

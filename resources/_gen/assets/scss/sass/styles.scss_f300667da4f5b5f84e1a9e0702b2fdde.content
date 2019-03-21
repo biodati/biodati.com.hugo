@@ -1,0 +1,104 @@
+* {
+  font-family: Roboto, sans-serif; }
+
+body {
+  padding-top: 0 !important; }
+
+.btn-main {
+  color: #253661;
+  background-color: goldenrod;
+  width: 90%;
+  text-transform: uppercase; }
+
+.banner-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px; }
+  .banner-container .logo-label {
+    color: #253661; }
+  .banner-container .nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #253661; }
+
+.section-landing {
+  height: 90vh; }
+  .section-landing .box {
+    margin-top: 12%;
+    background-color: rgba(24, 35, 66, 0.6);
+    color: #fff;
+    padding: 10px; }
+    .section-landing .box #btn-subscribe {
+      border-radius: 20px; }
+
+.section-overview {
+  background-color: rgba(236, 237, 238, 0.88);
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .section-overview #overview-demo {
+    background-color: rgba(24, 35, 66, 0.3);
+    padding: 25px; }
+    .section-overview #overview-demo .container-video {
+      margin-bottom: 1rem; }
+      .section-overview #overview-demo .container-video video {
+        height: auto;
+        width: 100%; }
+    .section-overview #overview-demo #btn-demo {
+      border-radius: 0;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 15px; }
+      .section-overview #overview-demo #btn-demo a {
+        color: #253661;
+        text-decoration: none; }
+
+.section-uses-container .section-uses {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  font-weight: 300; }
+  .section-uses-container .section-uses .uses-container #uses-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 25px; }
+  .section-uses-container .section-uses .uses-container #uses-paragraph {
+    font-size: 1.8rem; }
+  .section-uses-container .section-uses .uses-container #uses-list {
+    font-size: 1.8rem; }
+
+.section-features-components {
+  background-color: rgba(236, 237, 238, 0.88);
+  padding: 15px; }
+  .section-features-components .features-cards {
+    background-color: #fff; }
+  .section-features-components .card-header {
+    color: #fff;
+    background-color: #253661; }
+  .section-features-components .component-cards {
+    background-color: #fff; }
+
+.section-focus-areas {
+  background-color: #253661; }
+  .section-focus-areas .focus-areas-title {
+    color: #fff;
+    font-size: 4rem; }
+  .section-focus-areas .card-header {
+    color: #fff;
+    background-color: #253661;
+    height: 6rem; }
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #1d2a4f; }
+
+.section-footer {
+  color: #9b9da2;
+  font-size: 0.7rem;
+  background-color: #f1f1f1;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section-footer a {
+    color: inherit;
+    text-decoration: none; }
