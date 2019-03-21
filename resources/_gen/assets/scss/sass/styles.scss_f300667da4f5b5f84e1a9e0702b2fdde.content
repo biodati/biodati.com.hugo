@@ -6,7 +6,7 @@ body {
 
 .btn-main {
   color: #253661;
-  background-color: goldenrod;
+  background-color: gold;
   width: 90%;
   text-transform: uppercase; }
 
