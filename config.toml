@@ -1,4 +1,11 @@
-baseURL = "http://example.org/"
+baseURL = "http://biodati.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "BioDati, Inc."
 theme = "terrassa"
+
+[menu]
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact Us"
+    url = "mailto:help@biodati.com"
+    weight = 0
