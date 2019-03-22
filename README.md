@@ -54,7 +54,7 @@ the `baseof.html` file looks like this:
     `{{- block "main" . }}{{- end }}`\
     `{{- partial "footer.html" . -}}`\
 `</body>`\
-`</html>`\
+`</html>`
 
 Any file inside the layout folder wrapped in the `{{ define "main" }}` will go into the `{{ block "main" . }}` tag above which has the header and footer around it as well
 
@@ -64,29 +64,29 @@ Hugo also looks in the layout folder for any names that match the content files 
 Hugo will use the front matter from the `_index.md`, which serves as the default home content, to define a url
 You can also create navigation items inside the config.toml, this is what the menu looks like in the config:
 
-`[menu]`
-  `[[menu.main]]`
-    `identifier = "contact"`
-    `name = "Contact Us"`
-    `url = "mailto:help@biodati.com"`
-    `weight = 0`
+`[menu]`\
+  `[[menu.main]]`\
+    `identifier = "contact"`\
+    `name = "Contact Us"`\
+    `url = "mailto:help@biodati.com"`\
+    `weight = 0`\
 
-  `[[menu.footer]]`
-    `identifier = "cookies"`
-    `name = "Cookies Policy"`
-    `url = "/cookies/"`
-    `weight = 0`
+  `[[menu.footer]]`\
+    `identifier = "cookies"`\
+    `name = "Cookies Policy"`\
+    `url = "/cookies/"`\
+    `weight = 0`\
 
-  `[[menu.footer]]`
-    `identifier = "policy"`
-    `name = "Privacy Policy"`
-    `url = "/policy/"`
-    `weight = 0`
+  `[[menu.footer]]`\
+    `identifier = "policy"`\
+    `name = "Privacy Policy"`\
+    `url = "/policy/"`\
+    `weight = 0`\
   
-  `[[menu.footer]]`
-    `identifier = "adsworks"`
-    `name = "ADSWORKS"`
-    `url = "http://www.adsworks.com"`
+  `[[menu.footer]]`\
+    `identifier = "adsworks"`\
+    `name = "ADSWORKS"`\
+    `url = "http://www.adsworks.com"`\
     `weight = 1`
 
 Here there are two menus being defined, `menu.main` and `menu.footer` I added the Contact Us to the menu main which shows on the top nav and I created a footer nav for the cookies, privacy-policy, and link to the ADS website
