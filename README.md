@@ -27,7 +27,7 @@ Hugo does not pull from the config.toml in the theme
 ### Created Files
 The home page of the biodati site is in the `index.html` template file which is in the root layout folder and is made up of partials which looks like this:
 
-`{{ define "main" }}`\ 
+`{{ define "main" }}`\
 `{{ partial "hero.html" . }}`\
 `{{ partial "videos.html" . }}`\
 `{{ partial "uses.html" .}}`\
@@ -46,15 +46,15 @@ The site is still using the templates in the `_default/` folder (baseof, list, a
 
 the `baseof.html` file looks like this:
 
-`<!DOCTYPE html>`
-`<html lang="en">`
-`{{- partial "head.html" . -}}`
-`<body>`
-    `{{- partial "header.html" . -}}`
-    `{{- block "main" . }}{{- end }}`
-    `{{- partial "footer.html" . -}}`
-`</body>`
-`</html>`
+`<!DOCTYPE html>`\
+`<html lang="en">`\
+`{{- partial "head.html" . -}}`\
+`<body>`\
+    `{{- partial "header.html" . -}}`\
+    `{{- block "main" . }}{{- end }}`\
+    `{{- partial "footer.html" . -}}`\
+`</body>`\
+`</html>`\
 
 Any file inside the layout folder wrapped in the `{{ define "main" }}` will go into the `{{ block "main" . }}` tag above which has the header and footer around it as well
 
