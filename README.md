@@ -5,6 +5,8 @@ The Hugo theme used here is called [Terrassa](https://themes.gohugo.io/hugo-terr
 
 This is [tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1) that I followed for Hugo
 
+IMPORTANT NOTE: For some reason I cannot push the theme up to github, so you may have to do a git clone from the [terrassa theme github](https://github.com/danielkvist/hugo-terrassa-theme) into the theme folder
+
 ### Usage
 To run the site, use `hugo server -D` instead of `hugo server` in the root folder (it will not work anywhere else)
 The `-D` refers to whether or not the `draft` boolean property in the front matter of the content files are set to true which means it will not be visible without it (Any new generated content files will have draft set to true by default). When you set it to `false` then you won't need the `-D`
