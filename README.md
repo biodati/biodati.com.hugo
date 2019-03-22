@@ -15,9 +15,9 @@ The navigation can be affected by this as well since the `_index.md` (which serv
 
 ### Summary
 * I created partials from the original biodati site separated by each section
-* placed all those partials inside the `index.html` which is in the top level of the `layout/` folder which hugo recognizes as the home page
+* placed all those partials inside the `index.html` which is in the top level of the `layout/` folder which hugo recognizes as the home page of the site
 * these files override the theme partials and the theme home page
-* the only files that are still used from the theme are the files in the `_default/` folder which hugo uses are the default templates
+* the only files that are still used from the theme are the files in the `_default/` folder which hugo uses for the default templates (the name is very important so I created a `_default/` folder as well in the layout folder, but I did not copy the template files over)
 * hugo creates navigation from generated content files (e.g. `hugo new posts/post1.md` which hugo creates a url for `/posts/post1`)
 * you can also defined navigation items inside the config file which I did for the Contact Us (under `[menu]` in the config.toml)
 * Also Hugo has an [asset pipeline](https://gohugo.io/hugo-pipes/) which I used for sass files
@@ -27,12 +27,12 @@ Hugo does not pull from the config.toml in the theme
 ### Created Files
 The home page of the biodati site is in the `index.html` template file which is in the root layout folder and is made up of partials which looks like this:
 
-`{{ define "main" }}`
-`{{ partial "hero.html" . }}`
+`{{ define "main" }}`\s\s
+`{{ partial "hero.html" . }}`\s\s
 `{{ partial "videos.html" . }}`
 `{{ partial "uses.html" .}}`
-`{{ partial "features.html" . }}`
-`{{ partial "focuses.html" . }}`
+`{{ partial "features.html" . }}`&nbsp;
+`{{ partial "focuses.html" . }}`&nbsp;
 `{{ end }}`
 
 the `{{ define "main"}}` `{{ end }}` is used for the `baseof.html` (once again located in the theme `_default/` folder).
