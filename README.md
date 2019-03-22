@@ -28,6 +28,7 @@ Hugo does not pull from the config.toml in the theme
 The home page of the biodati site is in the `index.html` template file which is in the root layout folder and is made up of partials which looks like this:
 
 `{{ define "main" }}`
+
 `{{ partial "hero.html" . }}`
 `{{ partial "videos.html" . }}`
 `{{ partial "uses.html" .}}`
