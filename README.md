@@ -19,7 +19,7 @@ The navigation can be affected by this as well since the `_index.md` (which serv
 * these files override the theme partials and the theme home page
 * the only files that are still used from the theme are the files in the `_default/` folder which hugo uses for the default templates (the name is very important so I created a `_default/` folder as well in the layout folder, but I did not copy the template files over)
 * hugo creates navigation from generated content files (e.g. `hugo new posts/post1.md` which hugo creates a url for `/posts/post1`)
-* you can also defined navigation items inside the config file which I did for the Contact Us (under `[menu]` in the config.toml)
+* you can also define navigation items inside the config file which I did for the Contact Us (under `[menu]` in the config.toml)
 * Also Hugo has an [asset pipeline](https://gohugo.io/hugo-pipes/) which I used for sass files
 
 Hugo does not pull from the config.toml in the theme
