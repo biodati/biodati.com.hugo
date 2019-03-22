@@ -3,7 +3,7 @@ Hugo-based biodati.com website
 
 The Hugo theme used here is called [Terrassa](https://themes.gohugo.io/hugo-terrassa-theme/)
 
-This is [tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1) that I followed for Hugo
+This is the [tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1) that I followed for Hugo
 
 IMPORTANT NOTE: For some reason I cannot push the theme up to github, so you may have to do a git clone from the [terrassa theme github](https://github.com/danielkvist/hugo-terrassa-theme) into the theme folder
 
