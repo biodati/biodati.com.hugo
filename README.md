@@ -91,6 +91,8 @@ You can also create navigation items inside the config.toml, this is what the me
 
 Here there are two menus being defined, `menu.main` and `menu.footer` I added the Contact Us to the menu main which shows on the top nav and I created a footer nav for the cookies, privacy-policy, and link to the ADS website
 
+I did generate content files for cookies and the privacy policy since I could not figure out how to just use simple links for internal static html pages
+
 The top navigation logic is inside the `header.html` partial and the footer navigation logic is inside the `footer.html` partial
 
 ### Hugo Pipes
