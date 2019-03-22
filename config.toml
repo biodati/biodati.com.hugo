@@ -9,3 +9,21 @@ theme = "terrassa"
     name = "Contact Us"
     url = "mailto:help@biodati.com"
     weight = 0
+
+  [[menu.footer]]
+    identifier = "cookies"
+    name = "Cookies Policy"
+    url = "/cookies/"
+    weight = 0
+
+  [[menu.footer]]
+    identifier = "policy"
+    name = "Privacy Policy"
+    url = "/policy/"
+    weight = 0
+  
+  [[menu.footer]]
+    identifier = "adsworks"
+    name = "ADSWORKS"
+    url = "http://www.adsworks.com"
+    weight = 1
