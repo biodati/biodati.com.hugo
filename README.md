@@ -69,19 +69,19 @@ You can also create navigation items inside the config.toml, this is what the me
     `identifier = "contact"`\
     `name = "Contact Us"`\
     `url = "mailto:help@biodati.com"`\
-    `weight = 0`\
+    `weight = 0`
 
   `[[menu.footer]]`\
     `identifier = "cookies"`\
     `name = "Cookies Policy"`\
     `url = "/cookies/"`\
-    `weight = 0`\
+    `weight = 0`
 
   `[[menu.footer]]`\
     `identifier = "policy"`\
     `name = "Privacy Policy"`\
     `url = "/policy/"`\
-    `weight = 0`\
+    `weight = 0`
   
   `[[menu.footer]]`\
     `identifier = "adsworks"`\
