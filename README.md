@@ -5,7 +5,6 @@ The Hugo theme used here is called [Terrassa](https://themes.gohugo.io/hugo-terr
 
 This is the [tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1) that I followed for Hugo
 
-IMPORTANT NOTE: For some reason I cannot push the theme up to github, so you may have to do a git clone from the [terrassa theme github](https://github.com/danielkvist/hugo-terrassa-theme) into the theme folder. It may easier to just pull the `_default/` files out and put them into the root site instead of the theme.
 
 ### Usage
 To run the site, use `hugo server -D` instead of `hugo server` in the root folder (it will not work anywhere else)
@@ -82,7 +81,7 @@ You can also create navigation items inside the config.toml, this is what the me
     `name = "Privacy Policy"`\
     `url = "/policy/"`\
     `weight = 0`
-  
+
   `[[menu.footer]]`\
     `identifier = "adsworks"`\
     `name = "ADSWORKS"`\
