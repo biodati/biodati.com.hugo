@@ -1,12 +1,6 @@
 * {
   font-family: Roboto, sans-serif; }
 
-@keyframes MoveLeftRight {
-  0%, 100% {
-    left: -2px; }
-  50% {
-    left: -7px; } }
-
 #banner {
   background-image: url(../img/bg-network_nodes.png);
   background-repeat: no-repeat;
@@ -23,12 +17,9 @@
   height: 23px; }
 
 #demo-container {
-  min-height: calc(100vh - 182px);
-  overflow: hidden; }
+  min-height: 100vh; }
   #demo-container #demo-left {
-    padding: 35px;
-    padding-top: 0px;
-    padding-bottom: 35px; }
+    padding: 35px; }
     #demo-container #demo-left .row {
       padding-top: 30px; }
     #demo-container #demo-left .demo-title-1 {
@@ -46,11 +37,6 @@
       color: #fff;
       font-size: 19px;
       padding: 15px; }
-      #demo-container #demo-left .btn-container #launch-btn:hover {
-        background-color: #07b26e; }
-        #demo-container #demo-left .btn-container #launch-btn:hover #button-right-arrow {
-          position: relative;
-          animation: MoveLeftRight 1s ease-out infinite; }
     #demo-container #demo-left .card {
       border: 1px solid #e8e8e8;
       background-color: #e8e8e8; }

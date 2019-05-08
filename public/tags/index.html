@@ -1,4 +1,5 @@
-<head>
+<!DOCTYPE html>
+<html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -40,13 +41,13 @@
     rel="icon"
     type="image/png"
     sizes="32x32"
-    href="{{ $.Site.BaseURL }}img/bookmark-icons/favicon-32x32.png"
+    href="http://biodati.com/img/bookmark-icons/favicon-32x32.png"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="16x16"
-    href="{{ $.Site.BaseURL }}img/bookmark-icons/favicon-16x16.png"
+    href="http://biodati.com/img/bookmark-icons/favicon-16x16.png"
   />
   <link
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -58,35 +59,73 @@
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  
+  
+  
 
-  {{ $sassStyles := resources.Get "sass/styles.scss" }}
-  {{ $style := $sassStyles | resources.ToCSS }}
-  {{ $sassDemo := resources.Get "sass/demo.scss" }}
-  {{ $demo := $sassDemo | resources.ToCSS }}
-
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
-  <link rel="stylesheet" href="{{ $demo.Permalink }}" />
-  <title>{{ .Site.Title }} - {{ .Title }}</title>
-
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-  <script>
-  window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#253661"
-      },
-      "button": {
-        "background": "#3cb371",
-        "text": "#fff"
-      }
-    },
-    "theme": "edgeless",
-    "position": "bottom-left"
-  })});
-  </script>
+  <link rel="stylesheet" href="http://biodati.com/" />
+  <link rel="stylesheet" href="http://biodati.com/sass/demo.css" />
+  <title>BioDati, Inc. - Tags</title>
 </head>
+<body><header class="row banner-container">
+  <div class="col-md-6 align-items-center">
+    <a class="logo justify-content-center" href="#">
+      <img src="http://biodati.com//img/bioDati_logo_1.png" />
+    </a>
+  </div>
+  <div class="col-sm-6 collapse-navbar">
+    <ul class="nav justify-content-center">
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" href="https://medium.com/biodati">Blog</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:help@biodati.com">Contact Us</a>
+      </li>
+      
+    </ul>
+  </div>
+</header>
+<main class="content">
+	
+
+	
+
+	
+
+</main>
+<footer class="container-fluid section-footer">
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex justify-content-start footer-list">
+          <p>
+            Copyright &copy; 2018 BioDati, Inc. All rights reserved. <span>|</span> Designed &amp; Developed by
+            
+            <li class="pl-1 pr-1">
+              <a href="http://www.adsworks.com">ADSWORKS</a>
+            </li>
+            <span>|</span>
+            
+            <li class="pl-1 pr-1">
+              <a href="/cookies/">Cookies Policy</a>
+            </li>
+            <span>|</span>
+            
+            <li class="pl-1 pr-1">
+              <a href="/policy/">Privacy Policy</a>
+            </li>
+            <span>|</span>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer></body>
+
+</html>

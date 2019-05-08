@@ -6,6 +6,17 @@ $greenBtn: #20c583;
   font-family: Roboto, sans-serif;
 }
 
+
+
+@keyframes MoveLeftRight {
+  0%, 100% {
+    left: -2px;
+  }
+  50% {
+    left: -7px;
+  }
+}
+
 // Header //
 #banner {
   background-image: url(../img/bg-network_nodes.png);
@@ -28,11 +39,14 @@ $greenBtn: #20c583;
 }
 
 #demo-container {
-  min-height: 100vh;
+  min-height: calc(100vh - 182px);
+  overflow: hidden;
   #demo-left {
     // display: flex;
     // align-items: center;
     padding: 35px;
+    padding-top: 0px;
+    padding-bottom: 35px;
 
     .row {
       padding-top: 30px;
@@ -60,6 +74,14 @@ $greenBtn: #20c583;
         color: #fff;
         font-size: 19px;
         padding: 15px;
+        &:hover{
+          background-color: #07b26e;
+        #button-right-arrow{
+          position: relative;
+          
+            animation: MoveLeftRight 1s ease-out infinite;
+          }
+        }
       }
     }
 

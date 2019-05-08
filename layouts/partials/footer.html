@@ -2,13 +2,13 @@
   <div class="row">
     <div class="container">
       <div class="row">
-        <div class="d-flex justify-content-start footer-list">
+        <div class="footer-content d-flex justify-content-start footer-list">
           <p>
-            Copyright &copy; 2018 BioDati, Inc. All rights reserved. <span>|</span> Designed &amp; Developed by
+            Copyright &copy; 2018 BioDati, Inc.<br /> All rights reserved. <span>|</span> Designed &amp; Developed by
             {{ range .Site.Menus.footer }}
-            <li class="pl-1 pr-1">
+           
               <a href="{{ .URL }}">{{ .Name }}</a>
-            </li>
+       
             <span>|</span>
             {{ end }}
           </p>
