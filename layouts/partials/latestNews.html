@@ -1,0 +1,22 @@
+<section class="container-fluid section-latest">
+    <a class="anchor"></a>
+    <div class="row">
+        <div class="container">
+            <div class="row text-center">
+                    <div class="col-md-12">
+                        <h2 class="section-title">Latest News</h2>
+                        <div class="post-list">
+                            {{ range first 3 (where .Data.Pages.ByDate.Reverse "Type" "posts") }}
+                              <div class="post">
+                                <h2 class="post-title" ><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                                <p class="post-summery">{{ .Summary }}</p>
+                              </div>
+                                
+                              
+                            {{ end }}
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,31 +1,78 @@
-<header class="container-fluid">
-  <div class="row banner-container">
-    <div class="container">
-      <div class="row">
-      <nav class="navbar navbar-expand-md navbar-dark justify-content-between">
-        <a class="logo justify-content-center navbar-brand" href="{{ .Site.BaseURL }}">
-            <img src="{{ $.Site.BaseURL }}/img/biodati-logo.png" />
-        </a>
-        <span class="navbar-text">
-            Powering Biology - Learn, Know, Share, Compute
-        </span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse collapse-navbar" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto nav justify-content-center">
+
+<header class="s-header" id="home" data-scroll-index="0">
+  <div class="header-overlay">
+
+    <!-- ====== NAVGITION ======  -->
+    <nav class="navbar land-nav">
+      <div class="container">
+        <div class="row">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse"
+              aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- logo -->
+            <a class="logo navbar-brand" href="{{ .Site.BaseURL }}" data-scroll-nav="0">
+
+              <!-- WHITE LOGO -->
+              <img class="white-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo.png"
+                alt="logo" />
+
+              <!-- DARK LOGO -->
+              <img class="dark-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo-dark.png"
+                alt="logo" />
+
+            </a>
+          </div>
+
+          <!-- Collect the nav links, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="collapse">
+
+            <!-- links -->
+            <ul class="nav navbar-nav navbar-right" id="navbar">
               {{/*  move nav into a separate partial  */}}
               {{ $current := . }}
               {{ range.Site.Menus.header }}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+              <li >
+                <a href="{{ .URL }}">{{ .Name }}</a>
               </li>
               {{ end }}
-          </ul>
+            </ul>
+          </div><!-- /.navbar-collapse -->
         </div>
-      </nav>
+      </div><!-- /.container -->
+    </nav>
+    <!-- ====== END NAVGITION ======  -->
+
+    <!-- Header Content -->
+    <div id="particles-overl">
+      <div class="middle-c text-center">
+        <div class="container">
+          <div class="row">
+            <div class="capt col-md-8 col-sm-11">
+
+              <h1>BioDati Studio</h1>
+              <h2>Powering Network Biology</h2>
+              <p>for Biology, Drug R&D, Disease Foundations, Personalized Medicine</p>
+
+              <!-- Buttons -->
+              <div class="header-btn">
+                <a href="#about" data-scroll-nav="1">Know more</a>
+                <a class="cta-btn" href="#contact" data-scroll-nav="6">Subscribe to our Mailing List</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
+    <!-- End Header Content -->
+
+
   </div>
 </header>
+  <!-- ====== END HEADER ======  -->

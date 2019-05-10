@@ -48,28 +48,55 @@
     sizes="16x16"
     href="{{ $.Site.BaseURL }}img/bookmark-icons/favicon-16x16.png"
   />
-  <link
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-  />
+  <!-- Font awesome min css -->
   <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
 
+
+  <!-- OLD STYLES 
   {{ $sassStyles := resources.Get "sass/styles.scss" }}
   {{ $style := $sassStyles | resources.ToCSS }}
   {{ $sassDemo := resources.Get "sass/demo.scss" }}
   {{ $demo := $sassDemo | resources.ToCSS }}
 
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
-  <link rel="stylesheet" href="{{ $demo.Permalink }}" />
+  <link rel="stylesheet" href="{{ $demo.Permalink }}" />-->
+
   <title>{{ .Site.Title }} - {{ .Title }}</title>
+  
+
+  <!-- Bootstrap -->
+  {{ $bootstrap := resources.Get "css/bootstrap/bootstrap.min.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
+
+  <!-- ET-LINE-FONT CSS -->
+  {{ $etLineFont := resources.Get "css/et-line-font/et-line-font.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $etLineFont.Permalink }}">
+
+  <!-- MAGNIFIC POPUP CORE CSS -->
+  {{ $magnific := resources.Get "css/magnific-popup/magnific-popup.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $magnific.Permalink }}">
+
+  <!-- OWL CAROUSEL -->
+  {{ $owl := resources.Get "css/owl-carousel/owl.carousel.min.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $owl.Permalink }}">
+  {{ $owlTheme := resources.Get "css/owl-carousel/owl.theme.default.min.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $owlTheme.Permalink }}">
+
+  <!-- MAIN STYLE CSS -->
+  {{ $mainStyle := resources.Get "sass/styles.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
+
+  <!-- RESPONSIVE STYLE CSS -->
+  {{ $responsive := resources.Get "css/responsive.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $responsive.Permalink }}">
+
+  <!-- COLORS CSS -->
+  {{ $color := resources.Get "css/colors/blue.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $color.Permalink }}">
 
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>

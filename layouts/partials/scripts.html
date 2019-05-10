@@ -1,0 +1,23 @@
+{{ $gmaps := resources.Get "js/gmaps.min.js" }}
+{{ $isotope := resources.Get "js/isotope.pkgd.min.js" }}
+{{ $countTo := resources.Get "js/jquery.countTo.js" }}
+{{ $magnific := resources.Get "js/jquery.magnific-popup.min.js" }}
+{{ $main := resources.Get "js/main.js" }}
+{{ $map := resources.Get "js/map.js" }}
+{{ $masonry := resources.Get "js/masonry.pkgd.min.js" }}
+{{ $owl := resources.Get "js/owl.carousel.min.js" }}
+{{ $parlsey := resources.Get "js/parsley.js" }}
+{{ $particles := resources.Get "js/particles.min.js" }}
+{{ $scrollIt := resources.Get "js/scrollIt.min.js" }}
+
+{{ $bundle := slice $isotope $countTo $magnific  $masonry $owl $scrollIt $parlsey $particles $main | resources.Concat "js/bundle.js" }}
+{{ $js := $bundle | resources.Minify | resources.Fingerprint "sha512" }}
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!-- bootstrap js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="{{ $js.Permalink }}"></script>
+
