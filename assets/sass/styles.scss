@@ -7,7 +7,7 @@ Blue Crown - One Page Creative Parallax Template
     2. GLOBAL STYLES
     3. HEADER
     4. NAVGITION
-    5. ABOUT
+    5. videos
     6. FEATURES
     7. SERVICES
     8. QUOTE
@@ -410,15 +410,38 @@ img {
 }
 
 /* --------------------------------------
-  5. ABOUT
+  5. videos
 -----------------------------------------*/
+#overview-demo {
+  //background-color: rgba(24, 35, 66, 0.1);
+  //padding: 15px;
+}
+.video {
 
-.about-co {
+  text-align: center;
+
+  .list-title{
+    margin-bottom: 1.25rem;
+  }
+  .container-video {
+    padding: 0px;
+    background-color: #000;
+    -webkit-box-shadow: 0px 05px 40px -2px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 05px 40px -2px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 05px 40px -2px rgba(0, 0, 0, 0.55);
+    margin: 20px 15px 40px;
+    video {
+      height: auto;
+      width: 100%;
+    }
+  }
   h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 25px;
     line-height: 35px;
+    text-align:center;
+    text-transform: uppercase;
   }
   p {
     font-weight: 400;
@@ -451,87 +474,6 @@ img {
   }
 }
 
-.skills {
-  padding-left: 40px;
-  li span {
-    font-family: 'Poppins', sans-serif;
-    color: #212121;
-    font-size: 12.5px;
-    text-transform: uppercase;
-  }
-  .skills-left {
-    padding: 0 30px 0 0;
-  }
-  .skills-right {
-    padding: 0 0 0 30px;
-  }
-  .skills-bottom {
-    padding: 30px 0 0 0;
-  }
-  li {
-    margin-bottom: 30px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-    .progress-bar {
-      position: relative;
-      background: 0 0;
-      box-shadow: none;
-    }
-    .progress {
-      position: relative;
-      background: 0 0;
-      height: 22px;
-      box-shadow: none;
-      margin-bottom: 0;
-      border: none;
-    }
-  }
-}
-
-.skills-background {
-  border: none;
-}
-
-.skills li {
-  .progress::before {
-    position: absolute;
-    background: #dcdcdc;
-  }
-  .progress-bar::before {
-    position: absolute;
-    -webkit-transition: ease-out .7s;
-    -moz-transition: ease-out .7s;
-    -o-transition: ease-out .7s;
-    transition: ease-out .7s;
-    content: '';
-    top: 50%;
-    width: 100%;
-    height: 2px;
-    left: 0;
-  }
-}
-
-.progress::before {
-  content: '';
-  top: 50%;
-  width: 100%;
-  height: 2px;
-  left: 0;
-}
-
-.skills li .progress-bar span {
-  position: absolute;
-  top: 0px;
-  right: 0;
-  background: #fff;
-  padding: 1px 5px;
-  color: #111;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 16px;
-}
-
 /* --------------------------------------
   6. FEATURES
 -----------------------------------------*/
@@ -545,17 +487,96 @@ img {
   .feat-info {
     margin-left: 70px;
     h5 {
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
-      position: relative;
-      font-family: 'Poppins', sans-serif;
-      font-size: 14px;
+      
     }
     p {
       font-size: 13px;
       color: #ddd;
       font-weight: 400;
+    }
+  }
+}
+
+.uses{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  color: #ddd;
+  &:before{
+    content: "";
+    background: #212121;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -2;
+  }
+  &::after{
+    content: "";
+    background: url(../img/bg-nodes_edges.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 55%;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  .icons{
+    margin-bottom: 10px;
+  }
+  .uses-container {
+    display: flex;
+    z-index: 1;
+    #uses-title {
+      font-family: 'Poppins', sans-serif;
+
+      font-size: 38px;  
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    #uses-paragraph {
+      font-size: 2rem;
+      margin: 0px 35px 40px;
+    }
+
+    #uses-col{
+      display: flex;
+      
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    #uses-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      font-size: 2rem;
+      
+
+      li{
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        &:before{
+          font-family: FontAwesome, regular;
+          font-style: normal;
+          content: "\f058";
+          display: inline-block;
+          
+          margin-right: 10px;
+          color: mediumseagreen;
+        }
+      }
     }
   }
 }
