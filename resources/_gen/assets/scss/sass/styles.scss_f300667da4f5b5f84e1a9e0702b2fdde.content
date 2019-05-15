@@ -457,6 +457,9 @@ img {
 .services {
   padding: 120px 0 40px 0; }
 
+.serve-co {
+  display: flex; }
+
 .serv-item {
   padding-right: 30px;
   margin-bottom: 80px; }
@@ -475,19 +478,19 @@ img {
 /* --------------------------------------
   8. QUOTE
 -----------------------------------------*/
-.quote {
-  background: url("http://via.placeholder.com/1350x750");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.focus {
+  background: #212121;
   text-align: center;
   position: relative;
   color: #FFF; }
-  .quote .quote-overlay {
-    background: rgba(17, 17, 17, 0.9);
+  .focus .focus-overlay {
+    background: url("../img/bg-network.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     text-align: center; }
-  .quote .icon, .quote i {
+  .focus .icon, .focus i {
     position: absolute;
     top: 49.5%;
     width: 100%;
@@ -500,20 +503,20 @@ img {
     font-size: 100px;
     color: #eee;
     opacity: 0.07; }
-  .quote .quote-co {
+  .focus .quote-co {
     float: none;
     margin: 0 auto;
     text-align: center; }
-    .quote .quote-co p {
+    .focus .quote-co p {
       font-family: 'Poppins', sans-serif;
       font-size: 33px;
       line-height: 45px; }
-    .quote .quote-co h4 {
+    .focus .quote-co h4 {
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
       text-transform: uppercase;
       margin: 30px 0 7px 0; }
-    .quote .quote-co span {
+    .focus .quote-co span {
       font-weight: 400;
       font-size: 13.5px;
       color: #ccc; }

@@ -588,10 +588,13 @@ img {
 .services {
   padding: 120px 0 40px 0;
 }
-
+.serve-co{
+  display: flex;
+}
 .serv-item {
   padding-right: 30px;
   margin-bottom: 80px;
+  
   .serv-icon {
     font-size: 40px;
   }
@@ -612,17 +615,18 @@ img {
   8. QUOTE
 -----------------------------------------*/
 
-.quote {
-  background: url('http://via.placeholder.com/1350x750');
+.focus {
+  background: #212121;
+  text-align: center;
+  position: relative;
+  color: #FFF;
+  .focus-overlay {
+    
+    background: url('../img/bg-network.png');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  text-align: center;
-  position: relative;
-  color: #FFF;
-  .quote-overlay {
-    background: rgba(17, 17, 17, 0.9);
     text-align: center;
   }
   .icon, i {
