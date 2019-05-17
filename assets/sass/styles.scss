@@ -185,6 +185,14 @@ img {
   overflow-x: hidden !important;
 }
 
+.nav-header{
+  background: #fff;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  .nav-header{position:  !important;}
+}
+
 #particles-overl {
   height: 99vh;
 }
@@ -654,7 +662,11 @@ img {
     margin-right: 25px;
     //border-bottom: #1c1c1c 2px solid;
     //margin-bottom: 10px;
-    color:#3BAFDA
+    color:#3BAFDA;
+
+    .icon-networks, .icon-nanopub{
+      font-size: 56px;
+    }
   }
   h3 {
     margin: 0px 0px 5px;

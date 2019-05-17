@@ -1,4 +1,4 @@
-
+{{ if eq .Title "Home" }}
 <header class="s-header" id="home" data-scroll-index="0">
   <div class="header-overlay">
 
@@ -21,10 +21,11 @@
               <!-- WHITE LOGO -->
               <img class="white-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo.png"
                 alt="logo" />
-
               <!-- DARK LOGO -->
               <img class="dark-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo-dark.png"
-                alt="logo" />
+                alt="logo" />  
+
+                
 
             </a>
           </div>
@@ -76,3 +77,53 @@
   </div>
 </header>
   <!-- ====== END HEADER ======  -->
+{{ else }}
+
+<header class="nav-header" id="home" data-scroll-index="0">
+  <div class="header-overlay">
+
+    <!-- ====== NAVGITION ======  -->
+    <nav class="navbar land-nav">
+      <div class="container">
+        <div class="row">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse"
+              aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- logo -->
+            <a class="logo navbar-brand" href="{{ .Site.BaseURL }}" data-scroll-nav="0">
+
+              <!-- DARK LOGO -->
+              <img class="white-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo-dark.png"
+                alt="logo" />
+
+            </a>
+          </div>
+
+          <!-- Collect the nav links, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="collapse">
+
+            <!-- links -->
+            <ul class="nav navbar-nav navbar-right" id="navbar">
+              {{/*  move nav into a separate partial  */}}
+              {{ $current := . }}
+              {{ range.Site.Menus.header }}
+              <li >
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container -->
+    </nav>
+    <!-- ====== END NAVGITION ======  -->
+
+  </div>
+</header>
+{{end}}

@@ -148,6 +148,14 @@ img {
   position: relative;
   overflow-x: hidden !important; }
 
+.nav-header {
+  background: #fff;
+  height: 50px;
+  width: 100%;
+  position: relative; }
+  .nav-header .nav-header {
+    position: !important; }
+
 #particles-overl {
   height: 99vh; }
 
@@ -509,6 +517,8 @@ img {
     padding-right: 50px;
     margin-right: 25px;
     color: #3BAFDA; }
+    .comp-item .comp-icon .icon-networks, .comp-item .comp-icon .icon-nanopub {
+      font-size: 56px; }
   .comp-item h3 {
     margin: 0px 0px 5px;
     font-family: "Poppins", sans-serif;
