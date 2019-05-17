@@ -1,22 +1,67 @@
-<section class="container-fluid section-latest">
-    <a class="anchor"></a>
-    <div class="row">
-        <div class="container">
-            <div class="row text-center">
-                    <div class="col-md-12">
-                        <h2 class="section-title">Latest News</h2>
-                        <div class="post-list">
-                            {{ range first 3 (where .Data.Pages.ByDate.Reverse "Type" "posts") }}
-                              <div class="post">
-                                <h2 class="post-title" ><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                                <p class="post-summery">{{ .Summary }}</p>
-                              </div>
-                                
-                              
-                            {{ end }}
-                        </div>
+
+<section class="blog sections" id="blog" data-scroll-index="5">
+		<div class="container">
+			<div class="row">
+
+
+				<!-- SECTION TITLE START -->
+				<div class="s-title">
+					<h4>Latest News</h4>
+					<div class="title-line">
+						<hr class="t-line">
+						<hr class="b-line">
+					</div>
+				</div>
+				<!-- SECTION TITLE END -->
+
+
+                {{ range first 3 (where .Data.Pages.ByDate.Reverse "Type" "posts") }}
+                    <div class="post">
+                        <h2 class="post-title" ><a href=""></a></h2>
+                        <p class="post-summery"></p>
                     </div>
-            </div>
-        </div>
-    </div>
-</section>
+                              
+                    <div class="col-md-4 blog-box">
+                            <div class="blog-item">
+        
+                                <!-- BLOG IMAGE -->
+                                <div class="feature-box-img"
+                                    style="background-image: url('{{ .Params.thumbnail }}');">
+                                    <div class="blog-overlay"></div>
+                                </div>
+        
+                                <!-- CATEGORY OF THE POST -->
+                                <div class="categ">
+                                    <span>{{.Params.author }} - {{ .Date.Format "January 02, 2006" }}</span>
+                                </div>
+        
+                                <!-- POST TITLTE -->
+                                <a href="{{ .Permalink }}">
+                                    <h4>{{ .Title }}</h4>
+                                </a>
+        
+                                <!-- POST CONTENT-->
+                                <p>
+                                        {{ .Params.tagline }}
+                                </p>
+        
+                                <!-- POST LINK -->
+                                <div class="post-link">
+                                    <a href="{{ .Permalink }}">
+                                        Read More
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </div>
+        
+                            </div>
+                        </div>
+                              
+                {{ end }}
+
+				<!-- START BLOG POST -->
+				
+				<!-- END BLOG POST -->
+
+			</div>
+		</div>
+	</section>
