@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     //// FIXED NAVBAR
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 0) {
             $('.navbar').addClass('fixed');
         } else {
             $('.navbar').removeClass('fixed');
@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     //// SMOTH SCROLL
     $.scrollIt({
-        topOffset: -80
+        topOffset: -120
     });
 
     //// COLLAPSED MENU CLOSE ON CLICK

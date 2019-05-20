@@ -87,6 +87,10 @@
   {{ $mainStyle := resources.Get "sass/styles.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
 
+  <!-- MAIN Demo STYLE CSS -->
+  {{ $demoStyle := resources.Get "sass/demo.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $demoStyle.Permalink }}">
+
   <!-- RESPONSIVE STYLE CSS -->
   {{ $responsive := resources.Get "css/responsive.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $responsive.Permalink }}">

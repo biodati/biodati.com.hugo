@@ -221,7 +221,6 @@ img {
   4. NAVGITION
 -----------------------------------------*/
 .navbar {
-  background-color: transparent;
   border-color: transparent;
   padding: 20px 0 30px;
   background: 0 0;
@@ -286,6 +285,10 @@ img {
 .navbar > .container-fluid .navbar-brand {
   padding-top: 16px;
   margin-left: 0; }
+  .navbar > .container .navbar-brand img,
+  .navbar > .container-fluid .navbar-brand img {
+    height: 50px;
+    width: auto; }
 
 .navbar .logo {
   font-size: 30px;
@@ -306,6 +309,9 @@ img {
 
 .fixed {
   background: #fff;
+  background-image: url(../img/bg-network_nodes.png);
+  background-repeat: no-repeat;
+  background-position: right;
   padding: 0;
   position: fixed;
   -webkit-box-shadow: 0 0 13px #ddd;
@@ -1053,7 +1059,9 @@ img {
   14. FOOTER
 -----------------------------------------*/
 footer {
-  text-align: center; }
+  text-align: center;
+  padding: 15px 0px !important;
+  background: #f3f3f3; }
   footer .sc-icon span {
     width: 45px;
     height: 45px;
@@ -1075,8 +1083,8 @@ footer {
 
 .sub-footer {
   text-align: center;
-  padding: 20px 0 0 0;
-  margin-top: 25px; }
+  padding: 0px 0 0 0;
+  margin-top: 0px; }
   .sub-footer span {
     font-weight: 400; }
 
