@@ -66,8 +66,7 @@
   
 
   <!-- Bootstrap -->
-  {{ $bootstrap := resources.Get "css/bootstrap/bootstrap.min.css" | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $bootstrap.Permalink }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
   <!-- ET-LINE-FONT CSS -->
   {{ $biodatiFont1 := resources.Get "css/biodati-font/css/biodati-icons.css" | resources.Minify | resources.Fingerprint }}

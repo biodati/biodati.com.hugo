@@ -1,6 +1,14 @@
 {{ if eq .Title "Home" }}
+
+
+
+
+
+
+
 <header class="s-header" id="home" data-scroll-index="0">
   <div class="header-overlay">
+      
 
     <!-- ====== NAVGITION ======  -->
     <nav class="navbar land-nav">
@@ -23,9 +31,9 @@
                 alt="logo" />
               <!-- DARK LOGO -->
               <img class="dark-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo-v2-dark.png"
-                alt="logo" />  
+                alt="logo" />
 
-                
+
 
             </a>
           </div>
@@ -38,7 +46,7 @@
               {{/*  move nav into a separate partial  */}}
               {{ $current := . }}
               {{ range.Site.Menus.header }}
-              <li >
+              <li>
                 <a href="{{ .URL }}">{{ .Name }}</a>
               </li>
               {{ end }}
@@ -63,7 +71,7 @@
               <!-- Buttons -->
               <div class="header-btn">
                 <a href="#about" data-scroll-nav="1">Know more</a>
-                <a class="cta-btn" href="#contact" data-scroll-nav="6">Subscribe to our Mailing List</a>
+                <a  class="cta-btn" type="button" href="#"data-toggle="modal" data-target="#myModal" data-scroll-nav="6">Subscribe to our Mailing List</a>
               </div>
 
             </div>
@@ -76,7 +84,7 @@
 
   </div>
 </header>
-  <!-- ====== END HEADER ======  -->
+<!-- ====== END HEADER ======  -->
 {{ else }}
 
 <header class="nav-header" id="else" data-scroll-index="0">
@@ -103,7 +111,7 @@
                 alt="logo" />
               <!-- DARK LOGO -->
               <img class="dark-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo-v2-dark.png"
-                alt="logo" />  
+                alt="logo" />
 
             </a>
           </div>
@@ -116,7 +124,7 @@
               {{/*  move nav into a separate partial  */}}
               {{ $current := . }}
               {{ range.Site.Menus.header }}
-              <li >
+              <li>
                 <a href="{{ .URL }}">{{ .Name }}</a>
               </li>
               {{ end }}

@@ -1397,3 +1397,18 @@ footer {
 .footer .f-co a {
   color: #232323;
 }
+
+
+//modals
+.modal{
+ 
+
+  &-header{
+    .s-title{
+      h4{
+        font-size: 18px;
+      }
+      margin-bottom: 0px !important;
+    }
+  }
+}
