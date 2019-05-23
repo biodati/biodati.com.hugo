@@ -1,0 +1,42 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build_staging
+  image: plugins/hugo
+  settings:
+    hugo_version: 0.55
+    pull: always
+    url: https://staging.biodati.com
+    validate: true
+  when:
+    branch:
+    - staging
+
+- name: build_prod
+  image: plugins/hugo
+  settings:
+    hugo_version: 0.55
+    pull: always
+    url: https://biodati.com
+    validate: true
+  when:
+    branch:
+    - master
+
+- name: upload_staging
+  image: plugins/s3
+  settings:
+    bucket: staging.biodati.com
+    acl: public-read
+    access_key:
+      from_secret: aws_s3_access_key
+    secret_key:
+      from_secret: aws_s3_secret_key
+    source: public/**/*
+    target: /
+    strip_prefix: public/
+  when:
+    branch:
+    - staging
+
