@@ -517,13 +517,14 @@ img {
   display: flex;
   align-items: flex-start; }
   .comp-item .comp-icon {
-    font-family: 'biodati-icons';
+    font-family: "biodati-icons";
     font-size: 40px;
     width: 0px;
     padding-right: 50px;
     margin-right: 25px;
-    color: #3BAFDA; }
-    .comp-item .comp-icon .icon-networks, .comp-item .comp-icon .icon-nanopub {
+    color: #3bafda; }
+    .comp-item .comp-icon .icon-networks,
+    .comp-item .comp-icon .icon-nanopub {
       font-size: 56px; }
   .comp-item h3 {
     margin: 0px 0px 5px;
@@ -1116,7 +1117,61 @@ footer {
 .footer .f-co a {
   color: #232323; }
 
-.modal-header .s-title {
-  margin-bottom: 0px !important; }
-  .modal-header .s-title h4 {
-    font-size: 18px; }
+.modal .close {
+  color: #ddd;
+  text-shadow: 0 1px 0 #060606; }
+
+.modal-header {
+  border-bottom: 0px;
+  background: #000; }
+  .modal-header .s-title {
+    margin-bottom: 0px !important; }
+    .modal-header .s-title h4 {
+      font-size: 18px; }
+    .modal-header .s-title .b-line,
+    .modal-header .s-title .t-line {
+      border-color: mediumseagreen; }
+
+.modal-body {
+  padding: 25px 15px;
+  display: flex; }
+  .modal-body form {
+    flex-direction: column; }
+    .modal-body form .contact-item {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase; }
+      .modal-body form .contact-item input {
+        width: 100%;
+        font-weight: 400;
+        float: left;
+        font-size: 14px;
+        padding: 10px 10px;
+        border: none;
+        background: #fff;
+        margin-top: 5px;
+        color: #232323;
+        -webkit-transition: ease-out 0.3s;
+        -moz-transition: ease-out 0.3s;
+        -o-transition: ease-out 0.3s;
+        transition: ease-out 0.3s;
+        -webkit-box-shadow: inset -5px 5px 5px -6px #3d3d3d;
+        -moz-box-shadow: inset -5px 5px 5px -6px #3d3d3d;
+        box-shadow: inset -5px 5px 5px -6px #3d3d3d; }
+      .modal-body form .contact-item .button {
+        background: mediumseagreen;
+        border-radius: 40px;
+        border-color: mediumseagreen;
+        box-shadow: none;
+        padding: 9px 35px;
+        line-height: 27px;
+        color: #fff; }
+        .modal-body form .contact-item .button:hover {
+          background: #fff;
+          border-color: #fff;
+          color: #212121; }
+
+.modal-content {
+  overflow: hidden;
+  background: #212121;
+  color: #ddd; }
