@@ -2,6 +2,8 @@ kind: pipeline
 name: default
 
 steps:
+
+
 - name: build_staging
   image: plugins/hugo
   settings:
