@@ -12,12 +12,6 @@ branches:
 
 steps:
 
-- name: submodules
-  image: docker:git
-  commands:
-  - git submodule update --recursive --remote
-  - ls themes/terrassa
-
 - name: build_staging
   image: monachus/hugo
   settings:
@@ -25,7 +19,6 @@ steps:
   environment:
     HUGO_BASE_URL: https://staging.biodati.com
   commands:
-    - ls themes
     - ls themes/terrassa
     - hugo --baseURL $HUGO_BASE_URL
     - ls public
