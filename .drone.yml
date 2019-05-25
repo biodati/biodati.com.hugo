@@ -37,7 +37,7 @@ steps:
     - master
 
 - name: upload_staging
-  image: plugins/s3
+  image: plugins/s3-sync
   settings:
     bucket: staging.biodati.com
     access_key:
@@ -51,6 +51,7 @@ steps:
     target: /
     acl: public-read
     region: us-east-2
+    delete: true
   when:
     branch:
     - staging
