@@ -31,6 +31,7 @@ steps:
   environment:
     HUGO_BASE_URL: https://biodati.com
   commands:
+    - ls themes/terrassa
     - hugo --baseURL $HUGO_BASE_URL
     - ls public
   when:
