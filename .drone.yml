@@ -16,6 +16,7 @@ steps:
   image: docker:git
   commands:
   - git submodule update --recursive --remote
+  - ls themes/terrassa
 
 - name: build_staging
   image: monachus/hugo
