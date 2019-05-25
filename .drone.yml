@@ -25,7 +25,10 @@ steps:
   environment:
     HUGO_BASE_URL: https://staging.biodati.com
   commands:
+    - ls themes
+    - ls themes/terrassa
     - hugo --baseURL $HUGO_BASE_URL
+    - ls public
   when:
     branch:
     - staging
@@ -37,9 +40,7 @@ steps:
   environment:
     HUGO_BASE_URL: https://biodati.com
   commands:
-    - ls themes/terrassa
     - hugo --baseURL $HUGO_BASE_URL
-    - ls public
   when:
     branch:
     - master
