@@ -1,7 +1,8 @@
 # biodati.com.hugo
 Hugo-based biodati.com website
 
-[![Build Status](https://drone.biodati.com/api/badges/biodati/biodati.com.hugo/status.svg)](https://drone.biodati.com/biodati/biodati.com.hugo)
+[![Build Status - Prod](https://drone.biodati.com/api/badges/biodati/biodati.com.hugo/status.svg)](https://drone.biodati.com/biodati/biodati.com.hugo)
+[![Build Status - Staging](https://drone.biodati.com/api/badges/biodati/biodati.com.hugo/status.svg?ref=/refs/heads/staging)](https://drone.biodati.com/biodati/biodati.com.hugo)
 
 ## Overview
 
