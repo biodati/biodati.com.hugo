@@ -21,3 +21,7 @@ Steps:
 BioDati CI server: https://drone.biodati.com/
 
 
+Useful commands:
+
+    # In staging branch, run drone locally for testing (requires installing drone-cli)
+    drone exec --branch staging --repo biodati/biodati.com.hugo
