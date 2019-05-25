@@ -12,7 +12,7 @@ weight = 0
 
 [[menu.header]]
 identifier = "blog"
-name = "Blog3"
+name = "Blog4"
 url = "https://medium.com/biodati"
 weight = 0
 
