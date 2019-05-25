@@ -19,9 +19,7 @@ steps:
   environment:
     HUGO_BASE_URL: https://staging.biodati.com
   commands:
-    - ls themes/terrassa.copy
     - hugo --baseURL $HUGO_BASE_URL
-    - ls public
   when:
     branch:
     - staging
@@ -46,10 +44,7 @@ steps:
       from_secret: aws_s3_access_key
     secret_key:
       from_secret: aws_s3_secret_key
-    # access_key: AKIAZ44T3W2PCAEWIH75
-    # secret_key: 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
-    source: "public/**/*"
-    strip_prefix: public/
+    source: public
     target: /
     acl: public-read
     region: us-east-2
