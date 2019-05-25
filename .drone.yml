@@ -19,7 +19,7 @@ steps:
   environment:
     HUGO_BASE_URL: https://staging.biodati.com
   commands:
-    - ls themes/terrassa
+    - ls themes/terrassa.copy
     - hugo --baseURL $HUGO_BASE_URL
     - ls public
   when:
