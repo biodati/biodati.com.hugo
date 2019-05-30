@@ -408,7 +408,7 @@ img {
   -ms-transition: all 0.4s ease-in-out;
   z-index: 999;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     background-position: 100%;
   }
   .navbar-nav > li {
