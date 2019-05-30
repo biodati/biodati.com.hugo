@@ -393,7 +393,7 @@ img {
   background: #fff;
   background-image: url(../img/bg-network_nodes.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 80% 00%;
   padding: 0;
   position: fixed;
   -webkit-box-shadow: 0 0 13px #ddd;
@@ -407,6 +407,10 @@ img {
   -o-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   z-index: 999;
+
+  @media screen and (min-width: 768px) {
+    background-position: 100%;
+  }
   .navbar-nav > li {
     > {
       a {
