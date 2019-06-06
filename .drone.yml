@@ -52,3 +52,20 @@ steps:
   when:
     branch:
     - staging
+
+- name: upload_prod
+  image: plugins/s3-sync
+  settings:
+    bucket: biodati.com
+    access_key:
+      from_secret: aws_s3_access_key
+    secret_key:
+      from_secret: aws_s3_secret_key
+    source: public
+    target: /
+    acl: public-read
+    region: us-east-2
+    delete: true
+  when:
+    branch:
+    - master
