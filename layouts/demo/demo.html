@@ -2,144 +2,110 @@
 
 <body>
     <!-- Main content -->
-    <div class="container-fluid">
-        <div class="row" id="demo-container">
+    <section class="demo">
+        <div class="container-fluid">
             <!-- Left container -->
+            <div class="row ">
+                <div class="col-md-6" id="demo-left">
+                    <div class="s-title">
+                        <h4>BioDati Studio Demo Server</h4>
+                        <div class="title-line">
+                            <hr class="t-line">
+                            <hr class="b-line">
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="demo-paragraph">
+                            We created a demo server so you can take BioDati Studio out
+                            for a test run. For more detailed information about what
+                            BioDati Studio can do, please check out the
+                            <a href="#">BioDati Studio Help</a>.
+                        </p>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="card" id="demo-card-container">
+                            <div class="card-body" id="demo-card">
+                                <div>
+                                    <p>
+                                        You can log into the Demo using the following
+                                        credentials:
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Username: <span>demo</span></p>
+                                    <p>Password: <span>demo</span></p>
+                                </div>
+                                <div>
+                                    <p style="font-size: 13px; font-weight: 300">
+                                        Or, you can self-register using the Sign Up option and
+                                        create your own account.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
 
-            <div class="col-lg-6 col-md-12 col-sm-12" id="demo-left">
-                <div class="container">
-                    <!-- left-title -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1 class="demo-title-1">BioDati Studio Demo Server</h1>
+                        <a class="launch-btn" href="https://studio.demo.biodati.com/" target="_blank">
+                            Launch BioDati Studio
+                        </a>
+                    </div>
+                    <div class="col-sm-12">
+
+
+                        <div class="alert alert-warning" role="alert">
+                            <img class="reset-icon" src="{{ $.Site.BaseURL }}img/reset_icon.svg" />
+                            <span> Please note that the demo server will be reset to clean up the
+                                content on a semi-regular basis. <br /> (weekly or daily depending on
+                                need).</span>
                         </div>
                     </div>
-                    <!-- demo paragraph -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p class="demo-paragraph">
-                                We created a demo server so you can take BioDati Studio out
-                                for a test run. For more detailed information about what
-                                BioDati Studio can do, please check out the
-                                <a href="#">BioDati Studio Help</a>.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- demo card container -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card" id="demo-card-container">
-                                <div class="card-body" id="demo-card">
-                                    <div>
-                                        <p>
-                                            You can log into the Demo using the following
-                                            credentials:
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>Username: <span>demo</span></p>
-                                        <p>Password: <span>demo</span></p>
-                                    </div>
-                                    <div>
-                                        <p style="font-size: 14px; font-weight: 600">
-                                            Or, you can self-register using the Sign Up option and
-                                            create your own account.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Launch Button -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="btn-container">
-                                <a class="btn" id="launch-btn" href="https://studio.demo.biodati.com/" target="_blank">
-                                    Launch BioDati Studio
-                                    <img style="padding-left: 25px;" class="right-arrow-icon" id="button-right-arrow"
-                                        src="{{ $.Site.BaseURL }}img/arrow_right.png" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- clean up notice -->
-                    <div class="row" id="clean-up-notice-container">
-                        <div class="col-lg col-md col-sm">
-                            <div class="container alert alert-warning">
-                                <div class="row">
-                                    <div class="col-lg-1 col-md-1 col-sm-1">
-                                        <img class="reset-icon" src="{{ $.Site.BaseURL }}img/reset_icon.svg" />
-                                    </div>
-                                    <div class="col-lg-11 col-md-11 col-sm-11">
-                                        <p class="clean-up-note">
-                                            Please note that the demo server will be reset to clean up the
-                                            content on a semi-regular basis (weekly or daily depending on
-                                            need).
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-            </div>
 
-            <!-- right container -->
-            <div class="col-lg-6 col-md-12 col-sm-12" id="demo-right">
-                <div class="container demo-sub-container">
-                    <!-- right-title -->
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-xs-12">
-                            <h6 class="demo-title-2">
-                                Powering Biology - Learn, Know, Share, Compute
-                            </h6>
+                <!-- right container -->
+                <div class="col-md-6" id="demo-right">
+                    <div class="s-title">
+                        <h4>Powering Biology - Learn, Know, Share, Compute</h4>
+                        <div class="title-line">
+                            <hr class="t-line">
+                            <hr class="b-line">
                         </div>
                     </div>
-                    <!-- video -->
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12" id="video-container">
-                            <video class="video-controls video"
-                                poster="https://media.biodati.com/videos/studio_overview_posterframe.png" controls="">
-                                <source src="https://media.biodati.com/videos/studio_demo.mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                    <div class="col-xs-12" id="video-container">
+                        <video class="video-controls video"
+                            poster="https://media.biodati.com/videos/studio_overview_posterframe.png" controls="">
+                            <source src="https://media.biodati.com/videos/studio_demo.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <!-- demo-paragraph -->
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <p class="demo-paragraph-right-1">
-                                For some additional background, you will want to check out the
-                                BioDati Blog where you can read about all the exciting things
-                                we are doing and catch up on the latest Release Notes for
-                                Studio.
-                            </p>
-                        </div>
+                    <div class="col-xs-12">
+                        <p class="demo-paragraph-right-1">
+                            For some additional background, you will want to check out the
+                            BioDati Blog where you can read about all the exciting things
+                            we are doing and catch up on the latest Release Notes for
+                            Studio.
+                        </p>
                     </div>
-                    <!-- help notice -->
-                    <div class="row" id="chat-action">
-                        <div class="col-lg-1 col-md-1 col-sm-1">
-                            <img class="chat-icon" src="{{ $.Site.BaseURL }}img/chat_icon.svg" />
-                        </div>
-                        <div class="col-lg col-md col-sm">
-                            <p class="demo-paragraph-right-2">
-                                If you have any questions, please click on the blue chat
-                                bubble on the bottom right of the browser window and we will
-                                be happy to help.
-                            </p>
-                        </div>
+                    <div id="chat-action">
+
+                        <img class="chat-icon" src="{{ $.Site.BaseURL }}img/chat_icon.svg" />
+
+
+                        <p class="demo-paragraph-right-2">
+                            If you have any questions, please click on the blue chat
+                            bubble on the bottom right of the browser window and we will
+                            be happy to help.
+                        </p>
+
                     </div>
-                    <!--  -->
+
                 </div>
             </div>
             <!--  -->
         </div>
-    </div>
-    <script>
-            window.intercomSettings = {
-              app_id: "q01vyayo"
-            };
-          </script>
-          <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/q01vyayo';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    </section>
+
+    {{ partial "scripts.html" . }}
 </body>
 {{ end }}

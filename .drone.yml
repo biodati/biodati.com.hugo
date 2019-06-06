@@ -1,0 +1,71 @@
+---
+kind: pipeline
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+branches:
+  - master
+  - staging
+
+steps:
+
+- name: build_staging
+  image: monachus/hugo
+  settings:
+    pull: always
+  environment:
+    HUGO_BASE_URL: https://staging.biodati.com
+  commands:
+    - hugo --baseURL $HUGO_BASE_URL
+  when:
+    branch:
+    - staging
+
+- name: build_prod
+  image: monachus/hugo
+  settings:
+    pull: always
+  environment:
+    HUGO_BASE_URL: https://biodati.com
+  commands:
+    - hugo --baseURL $HUGO_BASE_URL
+  when:
+    branch:
+    - master
+
+- name: upload_staging
+  image: plugins/s3-sync
+  settings:
+    bucket: staging.biodati.com
+    access_key:
+      from_secret: aws_s3_access_key
+    secret_key:
+      from_secret: aws_s3_secret_key
+    source: public
+    target: /
+    acl: public-read
+    region: us-east-2
+    delete: true
+  when:
+    branch:
+    - staging
+
+- name: upload_prod
+  image: plugins/s3-sync
+  settings:
+    bucket: biodati.com
+    access_key:
+      from_secret: aws_s3_access_key
+    secret_key:
+      from_secret: aws_s3_secret_key
+    source: public
+    target: /
+    acl: public-read
+    region: us-east-2
+    delete: true
+  when:
+    branch:
+    - master

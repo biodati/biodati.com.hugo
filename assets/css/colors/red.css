@@ -1,0 +1,85 @@
+/* ========================================================================================= */
+/* ======================================= COLOR : #e74c3c =================================== */
+/* ========================================================================================= */
+.title-line hr {
+  border-color: #e74c3c;
+}
+.s-header .middle-c .cta-btn {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:hover {
+  color: #e74c3c;
+}
+.navbar .logo {
+  color: #e74c3c;
+}
+.fixed .navbar-nav .active a {
+  color: #e74c3c;
+}
+.fixed .navbar-nav .active:hover a {
+  color: #e74c3c;
+}
+.about-co h3 span {
+  color: #e74c3c;
+}
+.skills li .progress-bar::before {
+  background: #e74c3c;
+}
+.skills li .progress-bar span {
+  border: 2px solid #e74c3c;
+}
+.features .feat-item .icon,
+.features .feat-item i {
+  color: #e74c3c;
+}
+.serv-item .serv-icon {
+  color: #e74c3c;
+}
+.quote .quote-co h4 {
+  color: #e74c3c;
+}
+.work .filter-work a {
+  border: 1px solid #e74c3c;
+}
+.work .filter-work .is-checked {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.work .work-caption .overlay {
+  background: rgba(231, 76, 60, 0.7);
+}
+.testimonial-box h3 {
+  color: #e74c3c;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+  border-color: #e74c3c;
+}
+.owl-theme .owl-dots .active span {
+  background: #e74c3c !important;
+}
+.price .item .mount h3 {
+  color: #e74c3c;
+}
+.price .order a:hover {
+  border-color: #e74c3c;
+  background-color: #e74c3c;
+}
+.blog-item .categ {
+  color: #e74c3c;
+}
+.contact .info-item span {
+  background: #e74c3c;
+}
+.contact-item input:focus,
+.contact-item textarea:focus {
+  border-color: #e74c3c;
+}
+.contact-item .button {
+  background: #e74c3c;
+  border-color: #e74c3c;
+}
+.contact-item .button:hover {
+  background-color: #e43d29;
+}

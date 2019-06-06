@@ -1,0 +1,85 @@
+/* ========================================================================================= */
+/* ======================================= COLOR : #8CC152 =================================== */
+/* ========================================================================================= */
+.title-line hr {
+  border-color: #8CC152;
+}
+.s-header .middle-c .cta-btn {
+  background-color: #8CC152;
+  border-color: #8CC152;
+}
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:hover {
+  color: #8CC152;
+}
+.navbar .logo {
+  color: #8CC152;
+}
+.fixed .navbar-nav .active a {
+  color: #8CC152;
+}
+.fixed .navbar-nav .active:hover a {
+  color: #8CC152;
+}
+.about-co h3 span {
+  color: #8CC152;
+}
+.skills li .progress-bar::before {
+  background: #8CC152;
+}
+.skills li .progress-bar span {
+  border: 2px solid #8CC152;
+}
+.features .feat-item .icon,
+.features .feat-item i {
+  color: #8CC152;
+}
+.serv-item .serv-icon {
+  color: #8CC152;
+}
+.quote .quote-co h4 {
+  color: #8CC152;
+}
+.work .filter-work a {
+  border: 1px solid #8CC152;
+}
+.work .filter-work .is-checked {
+  background-color: #8CC152;
+  border-color: #8CC152;
+}
+.work .work-caption .overlay {
+  background: rgba(140, 193, 82, 0.7);
+}
+.testimonial-box h3 {
+  color: #8CC152;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+  border-color: #8CC152;
+}
+.owl-theme .owl-dots .active span {
+  background: #8CC152 !important;
+}
+.price .item .mount h3 {
+  color: #8CC152;
+}
+.price .order a:hover {
+  border-color: #8CC152;
+  background-color: #8CC152;
+}
+.blog-item .categ {
+  color: #8CC152;
+}
+.contact .info-item span {
+  background: #8CC152;
+}
+.contact-item input:focus,
+.contact-item textarea:focus {
+  border-color: #8CC152;
+}
+.contact-item .button {
+  background: #8CC152;
+  border-color: #8CC152;
+}
+.contact-item .button:hover {
+  background-color: #7cb340;
+}

@@ -1,6 +1,11 @@
 # biodati.com.hugo
 Hugo-based biodati.com website
 
+[![Build Status - Prod](https://drone.biodati.com/api/badges/biodati/biodati.com.hugo/status.svg)](https://drone.biodati.com/biodati/biodati.com.hugo)
+[![Build Status - Staging](https://drone.biodati.com/api/badges/biodati/biodati.com.hugo/status.svg?ref=/refs/heads/staging)](https://drone.biodati.com/biodati/biodati.com.hugo)
+
+## Overview
+
 The Hugo theme used here is called [Terrassa](https://themes.gohugo.io/hugo-terrassa-theme/)
 
 This is the [tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1) that I followed for Hugo
@@ -13,6 +18,7 @@ The `-D` refers to whether or not the `draft` boolean property in the front matt
 The navigation can be affected by this as well since the `_index.md` (which serves as the home for each content folder e.g. `/posts`).
 
 ### Summary
+
 * I created partials from the original biodati site separated by each section
 * placed all those partials inside the `index.html` which is in the top level of the `layout/` folder which hugo recognizes as the home page of the site
 * these files override the theme partials and the theme home page
@@ -60,6 +66,7 @@ Any file inside the layout folder wrapped in the `{{ define "main" }}` will go i
 Hugo also looks in the layout folder for any names that match the content files and will use that layout for that content so if you wanted to use a different `list.html` template page for say a specfic blog, you would just put the `list.html` file in that folder you created
 
 ### Navigation
+
 Hugo will use the front matter from the `_index.md`, which serves as the default home content, to define a url
 You can also create navigation items inside the config.toml, this is what the menu looks like in the config:
 

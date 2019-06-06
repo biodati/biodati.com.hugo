@@ -1,7 +1,7 @@
-baseURL = "http://biodati.com/"
+baseURL = "https://biodati.com/"
 languageCode = "en-us"
 title = "BioDati, Inc."
-theme = "terrassa"
+theme = "terrassa.copy"
 
 [menu]
 [[menu.header]]
