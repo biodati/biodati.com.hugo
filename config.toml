@@ -2,6 +2,7 @@ baseURL = "https://biodati.com/"
 languageCode = "en-us"
 title = "BioDati, Inc."
 theme = "terrassa.copy"
+favicon = "favicon-32x32.png" # Relative URL
 
 [menu]
 [[menu.header]]
