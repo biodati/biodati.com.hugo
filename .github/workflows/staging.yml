@@ -3,7 +3,6 @@ on:
     push:
         branches:
             - staging
-            - gha_testing
 
 jobs:
     build_and_publish:
