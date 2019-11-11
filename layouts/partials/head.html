@@ -45,33 +45,33 @@
     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
   <!-- ET-LINE-FONT CSS -->
-  {{ $biodatiFont1 := resources.Get "css/biodati-font/css/biodati-icons.css" | resources.Minify | resources.Fingerprint }}
+  {{ $biodatiFont1 := resources.Get "/css/biodati-font/css/biodati-icons.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $biodatiFont1.Permalink }}">
 
   <!-- MAGNIFIC POPUP CORE CSS -->
-  {{ $magnific := resources.Get "css/magnific-popup/magnific-popup.css" | resources.Minify | resources.Fingerprint }}
+  {{ $magnific := resources.Get "/css/magnific-popup/magnific-popup.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $magnific.Permalink }}">
 
   <!-- OWL CAROUSEL -->
-  {{ $owl := resources.Get "css/owl-carousel/owl.carousel.min.css" | resources.Fingerprint }}
+  {{ $owl := resources.Get "/css/owl-carousel/owl.carousel.min.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $owl.Permalink }}">
   {{ $owlTheme := resources.Get "css/owl-carousel/owl.theme.default.min.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $owlTheme.Permalink }}">
 
   <!-- MAIN STYLE CSS -->
-  {{ $mainStyle := resources.Get "sass/styles.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  {{ $mainStyle := resources.Get "/sass/styles.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
 
   <!-- MAIN Demo STYLE CSS -->
-  {{ $demoStyle := resources.Get "sass/demo.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  {{ $demoStyle := resources.Get "/sass/demo.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $demoStyle.Permalink }}">
 
   <!-- RESPONSIVE STYLE CSS -->
-  {{ $responsive := resources.Get "css/responsive.css" | resources.Minify | resources.Fingerprint }}
+  {{ $responsive := resources.Get "/css/responsive.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $responsive.Permalink }}">
 
   <!-- COLORS CSS -->
-  {{ $color := resources.Get "css/colors/blue.css" | resources.Minify | resources.Fingerprint }}
+  {{ $color := resources.Get "/css/colors/blue.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $color.Permalink }}">
 
   <link rel="stylesheet" type="text/css"
