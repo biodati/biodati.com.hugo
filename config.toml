@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "BioDati, Inc."
 theme = "terrassa.copy"
 favicon = "favicon-32x32.png" # Relative URL
+googleAnalytics = "UA-114538730-1"
 
 [menu]
 [[menu.header]]

@@ -5,51 +5,26 @@
   <meta itemprop="description" content="http://biodati.com/." />
   <meta itemprop="image" content="http://www.biodati.com/img/brand_logo.png" />
 
-  <meta
-    property="og:title"
-    content="BioDati, Inc. - Data integration, analysis, visualization and collaboration"
-  />
+  <meta property="og:title" content="BioDati, Inc. - Data integration, analysis, visualization and collaboration" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.biodati.com" />
-  <meta
-    property="og:image"
-    content="http://www.biodati.com/img/brand_logo.png"
-  />
-  <meta
-    property="og:description"
-    content="BioDati Studio is browser based software platform for manipulating all types of biological networks."
-  />
+  <meta property="og:url" content="http://www.biodati.com/" />
+  <meta property="og:image" content="http://www.biodati.com/img/brand_logo.png" />
+  <meta property="og:description"
+    content="BioDati Studio is browser based software platform for manipulating all types of biological networks." />
   <meta property="og:site_name" content="BioDati, Inc." />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@bio_dati" />
-  <meta
-    name="twitter:title"
-    content="BioDati, Inc. - Data integration, analysis, visualization and collaboration"
-  />
-  <meta
-    name="twitter:description"
-    content="BioDati Studio is browser based software platform for manipulating all types of biological networks."
-  />
+  <meta name="twitter:title" content="BioDati, Inc. - Data integration, analysis, visualization and collaboration" />
+  <meta name="twitter:description"
+    content="BioDati Studio is browser based software platform for manipulating all types of biological networks." />
   <meta name="twitter:creator" content="@anselmo.difabio" />
-  <meta
-    name="twitter:image"
-    content="http://www.biodati.com/img/brand_logo.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="{{ $.Site.BaseURL }}img/bookmark-icons/favicon-32x32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="{{ $.Site.BaseURL }}img/bookmark-icons/favicon-16x16.png"
-  />
+  <meta name="twitter:image" content="http://www.biodati.com/img/brand_logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ $.Site.BaseURL }}/img/bookmark-icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ $.Site.BaseURL }}/img/bookmark-icons/favicon-16x16.png" />
   <!-- Font awesome min css -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 
 
@@ -66,54 +41,58 @@
 
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
   <!-- ET-LINE-FONT CSS -->
-  {{ $biodatiFont1 := resources.Get "css/biodati-font/css/biodati-icons.css" | resources.Minify | resources.Fingerprint }}
+  {{ $biodatiFont1 := resources.Get "/css/biodati-font/css/biodati-icons.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $biodatiFont1.Permalink }}">
 
   <!-- MAGNIFIC POPUP CORE CSS -->
-  {{ $magnific := resources.Get "css/magnific-popup/magnific-popup.css" | resources.Minify | resources.Fingerprint }}
+  {{ $magnific := resources.Get "/css/magnific-popup/magnific-popup.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $magnific.Permalink }}">
 
   <!-- OWL CAROUSEL -->
-  {{ $owl := resources.Get "css/owl-carousel/owl.carousel.min.css" | resources.Fingerprint }}
+  {{ $owl := resources.Get "/css/owl-carousel/owl.carousel.min.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $owl.Permalink }}">
   {{ $owlTheme := resources.Get "css/owl-carousel/owl.theme.default.min.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $owlTheme.Permalink }}">
 
   <!-- MAIN STYLE CSS -->
-  {{ $mainStyle := resources.Get "sass/styles.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  {{ $mainStyle := resources.Get "/sass/styles.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
 
   <!-- MAIN Demo STYLE CSS -->
-  {{ $demoStyle := resources.Get "sass/demo.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  {{ $demoStyle := resources.Get "/sass/demo.scss"| resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $demoStyle.Permalink }}">
 
   <!-- RESPONSIVE STYLE CSS -->
-  {{ $responsive := resources.Get "css/responsive.css" | resources.Minify | resources.Fingerprint }}
+  {{ $responsive := resources.Get "/css/responsive.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $responsive.Permalink }}">
 
   <!-- COLORS CSS -->
-  {{ $color := resources.Get "css/colors/blue.css" | resources.Minify | resources.Fingerprint }}
+  {{ $color := resources.Get "/css/colors/blue.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $color.Permalink }}">
 
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script>
-  window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#253661"
-      },
-      "button": {
-        "background": "#3cb371",
-        "text": "#fff"
-      }
-    },
-    "theme": "edgeless",
-    "position": "bottom-left"
-  })});
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#253661"
+          },
+          "button": {
+            "background": "#3cb371",
+            "text": "#fff"
+          }
+        },
+        "theme": "edgeless",
+        "position": "bottom-left"
+      })
+    });
   </script>
+  {{ template "_internal/google_analytics.html" . }}
 </head>
