@@ -33,6 +33,12 @@ Blue Crown - One Page Creative Parallax Template
   2. GLOBAL STYLES
 -----------------------------------------*/
 
+.s-header .middle-c a {
+  display: block;
+  float: left;
+  clear: both;
+}
+
 body {
   background: #fff;
   font-family: "Open Sans", sans-serif;
