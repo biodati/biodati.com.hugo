@@ -33,6 +33,12 @@ Blue Crown - One Page Creative Parallax Template
   2. GLOBAL STYLES
 -----------------------------------------*/
 
+.s-header .middle-c a {
+  display: block;
+  float: left;
+  clear: both;
+}
+
 body {
   background: #fff;
   font-family: "Open Sans", sans-serif;
@@ -190,15 +196,12 @@ img {
   height: 50px;
   width: 100%;
   position: relative;
-  .nav-header {
-    position: !important;
-  }
+
 }
 
 #particles-overl {
   height: 99vh;
 }
-
 
 .s-header {
   .header-overlay {
@@ -468,7 +471,7 @@ img {
       width: 100%;
     }
   }
-  h1{
+  h1 {
     @media screen and (max-width: 767px) {
       font-size: 15px;
     }
@@ -700,6 +703,102 @@ img {
     font-size: 13px;
     color: #585858;
   }
+}
+
+.faqs {
+  position: relative;
+  color: #ffffff;
+  background-color: #092c3a;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 120px;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/blue_node_bg.png);
+    opacity: 0.25;
+  }
+
+  h4 {
+    font-size: 30px;
+    display: inline;
+  }
+
+  a {
+    position: relative;
+    top: -5px;
+    margin-left: 20px;
+    font-size: 24px;
+    display: inline;
+    border: 2px solid #fff;
+    font-size: 11px;
+    padding: 15px 35px;
+    letter-spacing: 2px;
+    color: #fff;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    font-weight: 600;
+    background-color: transparent;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #fff;
+      color: #232323;
+      border-color: #fff;
+    }
+  }
+}
+
+.faqs-page{
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/blue_node_bg.png);
+    background-position: 50% 100%;
+    opacity: .15;
+  }
+  
+}
+
+.faq-title {
+  margin: 10px 0;
+    font-family: poppins,sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.faq-p{
+  font-weight: 400;
+    font-size: 13px;
+    color: #585858;
+    margin-bottom: 30px;
+}
+
+.faq-page-title {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-left: 0;
+  font-family: poppins, sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+#content-block{
+  min-height: calc(100vh - 164px);
 }
 
 /* --------------------------------------
