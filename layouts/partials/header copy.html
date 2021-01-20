@@ -18,14 +18,16 @@
               <span class="icon-bar"></span>
             </button>
             <!-- logo -->
-            <a class="logo navbar-brand" href="{{ .Site.BaseURL }}">
+            <a class="logo navbar-brand" href="{{ .Site.BaseURL }}" data-scroll-nav="0">
 
-              <!-- DARK LOGO -->
+              <!-- WHITE LOGO -->
               <img class="white-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo-v2.png"
                 alt="logo" />
               <!-- DARK LOGO -->
               <img class="dark-logo" width="200" height="" src="{{ $.Site.BaseURL }}/img/biodati-logo-v2-dark.png"
                 alt="logo" />
+
+
 
             </a>
           </div>
@@ -34,47 +36,13 @@
           <div class="collapse navbar-collapse" id="collapse">
 
             <!-- links -->
-            <ul class="nav navbar-nav navbar-right navbar--desktop" id="navbar">
+            <ul class="nav navbar-nav navbar-right" id="navbar">
               {{/*  move nav into a separate partial  */}}
               {{ $current := . }}
               {{ range.Site.Menus.header }}
-              <li class="top-level">
-                <a href="{{ .URL }}" id='{{ if eq .Identifier "contact" }}ContactUs{{ end }}'>{{ .Name }}</a>
-                {{ if .HasChildren }}
-                <ul class="sub-menu">
-                  {{ range .Children }}
-                  <li class="sub-level">
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                  </li>
-                  {{ end }}
-                </ul>
-                {{ end }}
-              </li>
-
-              {{ end }}
-            </ul>
-            <ul class="nav navbar-nav navbar-right navbar--mobile" id="navbar">
-              {{/*  move nav into a separate partial  */}}
-              {{ $current := . }}
-              {{ range.Site.Menus.header }}
-              <li class="top-level">
-                {{ if .HasChildren }}
-                <a data-toggle="collapse"class="dropdown-a" href="#{{ .Identifier }}Menu">{{ .Name }}</a>
-                <div class="collapse" id="{{ .Identifier }}Menu">
-                  <ul class="sub-menu">
-                    {{ range .Children }}
-                    <li class="sub-level">
-                      <a href="{{ .URL }}">{{ .Name }}</a>
-                    </li>
-                    {{ end }}
-                  </ul>
-                </div>
-
-                {{ else }}
+              <li>
                 <a href="{{ .URL }}">{{ .Name }}</a>
-                {{ end }}
               </li>
-
               {{ end }}
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -147,48 +115,21 @@
           <div class="collapse navbar-collapse" id="collapse">
 
             <!-- links -->
-            <ul class="nav navbar-nav navbar-right  navbar--desktop" id="navbar">
+            <ul class="nav navbar-nav navbar-right" id="navbar">
               {{/*  move nav into a separate partial  */}}
               {{ $current := . }}
               {{ range.Site.Menus.header }}
-              <li class="top-level">
-                <a href="{{ .URL }}" id='{{ if eq .Identifier "contact" }}ContactUs{{ end }}'>{{ .Name }}</a>
-                {{ if .HasChildren }}
-                <ul class="sub-menu">
-                  {{ range .Children }}
-                  <li class="sub-level">
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                  </li>
-                  {{ end }}
-                </ul>
-                {{ end }}
-              </li>
-
-              {{ end }}
-            </ul>
-            <ul class="nav navbar-nav navbar-right navbar--mobile" id="navbar">
-              {{/*  move nav into a separate partial  */}}
-              {{ $current := . }}
-              {{ range.Site.Menus.header }}
-              <li class="top-level">
-                {{ if .HasChildren }}
-                <a data-toggle="collapse"class="dropdown-a" href="#{{ .Identifier }}Menu">{{ .Name }}</a>
-                <div class="collapse" id="{{ .Identifier }}Menu">
-                  <ul class="sub-menu">
-                    {{ range .Children }}
-                    <li class="sub-level">
-                      <a href="{{ .URL }}">{{ .Name }}</a>
-                    </li>
-                    {{ end }}
-                  </ul>
-                </div>
-
-                {{ else }}
+              <li>
                 <a href="{{ .URL }}">{{ .Name }}</a>
-                {{ end }}
               </li>
-
-              {{ end }}
+              <ul class="sub-menu">
+                {{ range .Children }}
+                <li>
+                  <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+              </ul>
+            {{ end }}
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>

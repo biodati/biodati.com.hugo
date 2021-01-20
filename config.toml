@@ -9,20 +9,76 @@ googleAnalytics = "UA-114538730-1"
 [[menu.header]]
 identifier = "contact"
 name = "Contact Us"
-url = "mailto:help@biodati.com"
-weight = 0
+url = "#myModal"
+weight = 5
+[menu.header.params]
+    class = "contact"
 
 [[menu.header]]
 identifier = "faq"
 name = "FAQ's"
 url = "/faqs/"
-weight = 0
+weight = 4
+
+[[menu.header]]
+identifier = "explore"
+name = "Explore"
+url = ""
+weight = 6
 
 [[menu.header]]
 identifier = "blog"
 name = "Blog"
 url = "https://medium.com/biodati"
+weight = 3
+
+[[menu.header]]
+parent = "explore"
+identifier = "Our Platform"
+name = "Our Platform"
+url = "/faqs/"
 weight = 0
+
+[[menu.header]]
+parent = "explore"
+identifier = "Platform Technology"
+name = "Platform Technology"
+url = "/faqs/"
+weight = 0
+
+[[menu.header]]
+parent = "explore"
+identifier = "Resources"
+name = "Resources"
+url = "/faqs/"
+weight = 0
+
+[[menu.header]]
+parent = "explore"
+identifier = "BioDati Demo"
+name = "BioDati Demo"
+url = "/faqs/"
+weight = 0
+
+[[menu.header]]
+identifier = "AboutUs"
+name = "About Us"
+url = "/faqs/"
+weight = 1
+
+[[menu.header]]
+parent = "AboutUs"
+identifier = "Our Team"
+name = "Our Team"
+url = "/faqs/"
+weight = 1
+
+[[menu.header]]
+parent = "AboutUs"
+identifier = "careers"
+name = "Careers"
+url = "/faqs/"
+weight = 2
 
 [[menu.footer]]
 identifier = "cookies"
