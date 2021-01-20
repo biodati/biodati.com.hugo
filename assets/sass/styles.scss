@@ -196,7 +196,6 @@ img {
   height: 50px;
   width: 100%;
   position: relative;
-
 }
 
 #particles-overl {
@@ -757,9 +756,9 @@ img {
   }
 }
 
-.faqs-page{
+.faqs-page {
   position: relative;
-  &:before{
+  &:before {
     content: "";
     position: absolute;
     top: 0;
@@ -768,23 +767,22 @@ img {
     bottom: 0;
     background-image: url(../img/blue_node_bg.png);
     background-position: 50% 100%;
-    opacity: .15;
+    opacity: 0.15;
   }
-  
 }
 
 .faq-title {
   margin: 10px 0;
-    font-family: poppins,sans-serif;
-    font-weight: 700;
-    font-size: 17px;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
 }
 
-.faq-p{
+.faq-p {
   font-weight: 400;
-    font-size: 13px;
-    color: #585858;
-    margin-bottom: 30px;
+  font-size: 13px;
+  color: #585858;
+  margin-bottom: 30px;
 }
 
 .faq-page-title {
@@ -797,7 +795,7 @@ img {
   font-weight: 700;
 }
 
-#content-block{
+#content-block {
   min-height: calc(100vh - 164px);
 }
 
@@ -1581,3 +1579,115 @@ footer {
     color: #ddd;
   }
 }
+
+.navbar--desktop {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.navbar--mobile {
+  display: block;
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  li {
+    a:hover {
+      color: #212121 !important;
+    }
+  }
+}
+
+.nav {
+  .top-level {
+    position: relative;
+    .sub-menu {
+      color: #212121;
+      border-left: 2px solid #212121;
+      padding-left: 10px;
+
+      .sub-level {
+        a {
+          display: block;
+          color: #212121;
+          margin: 0;
+          padding: 0;
+          text-transform: uppercase;
+          font-size: 12px;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        border-left: 0px;
+        padding: 20px;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.6);
+        white-space: nowrap;
+
+        &:after,
+        &:before {
+          bottom: 100%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+        }
+
+        &:after {
+          border-color: rgba(255, 255, 255, 0);
+          border-bottom-color: rgba(0, 0, 0, 0.6);
+          border-width: 7px;
+          left: 45px;
+        }
+
+        .sub-level {
+          a {
+            display: block;
+            color: rgba(255, 255, 255, 0.95);
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+          }
+
+          &:last-of-type {
+            a {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .sub-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+#else{
+  .navbar-toggle .icon-bar {
+    background: #212121 !important;
+  }
+
+  .sub-level{
+    a{
+      color: #555555 !important;
+    }
+  }
+}
+
