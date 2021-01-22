@@ -36,14 +36,14 @@ weight = 3
 parent = "explore"
 identifier = "Our Platform"
 name = "Our Platform"
-url = "/faqs/"
+url = "/platform/"
 weight = 0
 
 [[menu.header]]
 parent = "explore"
 identifier = "Platform Technology"
 name = "Platform Technology"
-url = "/faqs/"
+url = "/platformtech/"
 weight = 0
 
 [[menu.header]]
@@ -57,27 +57,27 @@ weight = 0
 parent = "explore"
 identifier = "BioDati Demo"
 name = "BioDati Demo"
-url = "/faqs/"
+url = "/demo/"
 weight = 0
 
 [[menu.header]]
 identifier = "AboutUs"
 name = "About Us"
-url = "/faqs/"
+url = "/aboutus/"
 weight = 1
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "Our Team"
 name = "Our Team"
-url = "/faqs/"
+url = "/aboutus/"
 weight = 1
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "careers"
 name = "Careers"
-url = "/faqs/"
+url = "/careers/"
 weight = 2
 
 [[menu.footer]]

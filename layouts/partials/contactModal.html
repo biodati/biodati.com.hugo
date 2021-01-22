@@ -1,0 +1,51 @@
+
+<script language=”JavaScript”>
+
+    function submitForm() {
+        var formData = $('#contactForm').serialize();
+        console.log("Data:" + formData);
+        
+    }
+</script>
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="SignupForm_0" widgetid="SignupForm_0">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+
+                <div class="s-title">
+                    <h4>Send us a message<br /> and well get right back to you</h4>
+                    <div class="title-line">
+                        <hr class="t-line">
+                        <hr class="b-line">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form class="contact-form" id="contactForm" method="post"
+                    enctype="text/plain" name="contactForm">
+                    <div class="contact-item col-xs-6">
+                        Full Name:
+                        <input class="contact-item" type=”text” name=”Name”>
+                    </div>
+                    <div class="contact-item col-xs-6">
+                        Email:
+                        <input class="contact-item" type=”text” name=”email”>
+                    </div>
+                    <div class="contact-item col-xs-12">
+                        Subject:
+                        <input class="contact-item" type=”text” name=”subject”>
+                    </div>
+                    <div class="contact-item col-xs-12">
+                        Message:
+                        <textarea class="contact-item" name=”body”></textarea>
+                    </div>
+                    <div class="contact-item col-xs-12">
+                        <input class="button" type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

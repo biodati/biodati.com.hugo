@@ -29,9 +29,42 @@ $(document).ready(function () {
 
 
   //Open modal on link
-  $('#ContactUs').on('click', function (e){
-    $('#myModal').modal('show');
+  $('#ContactUs').on('click', function (e) {
+    $('#contactModal').modal('show');
   })
+
+
+  var maxLength = 150;
+	$(".text-truncate").each(function(){
+		if($(this).height() <= 105){
+      $(this).next(".read-more").hide();
+      $(this).removeClass("truncate");
+    }
+  });
+	$(".read-more").click(function(){
+    if(	$(this).prev().hasClass("truncate")){
+      $(this).prev().removeClass("truncate");
+      $(this).text("Read Less")
+    }else{
+      $(this).prev().addClass("truncate");
+      $(this).text("Read More")
+    }
+	});
+
+
+  //contact form js
+
+  $("#contactForm").on("submit", function (event) {
+    event.preventDefault();
+    var formData = $( this ).serializeArray();
+
+    var body = "Message From: " + formData[0].value + ",%0D%0AE-mail: " + formData[1].value + "%0D%0A%0D%0A" + formData[3].value;
+    window.open(
+      "mailto:address@gmail.com?subject=" + formData[2].value + "&body=" + body,
+      '_blank'
+    );
+    //console.log( $( this ).serializeArray() );
+  });
 
   //// SCROLL SPY TRIGGER
   $('body').scrollspy({
@@ -193,3 +226,4 @@ $(document).ready(function () {
   $('.cont-fo').parsley();
 
 });
+

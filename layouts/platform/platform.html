@@ -1,0 +1,29 @@
+{{define "main"}}
+<section id="content-block" class="block platform-page">
+    <div class="container">
+        <div class="row">
+            <article class="col-md-12">
+                <div class="col-md-12">
+                    <div class="s-title platform-page-title">
+                        <h4>Our Platform</h4>
+                        <div class="title-line">
+                            <hr class="t-line">
+                            <hr class="b-line">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <p class="platform-p">Most scientific disciplines have a standardized language associated with their usage, e.g.: Chemistry, Math, and Physics have the Chemical Reaction Language and the Mathematics Language. Biology is the exception. The <a href="https://bel.bio">Biological Expression Language (BEL)</a> is an open standards-based language representing biology and observations in a computable form.</p>
+                    <p class="platform-p" style="font-weight: 800;">Check out this example of biology shared through prose:</p>
+                    <img class="platform-img" src="{{ $.Site.BaseURL }}/img/platform-img.png" />
+                    <p class="platform-p">BEL allows for capturing scientific publications and databases into composable assertions, easily readable and usable by biologists. Our platform offers scientific context and citation information through our powerful knowledge curation interface in a type-ahead and highly user-friendly way. When knowledge moves through the application, we provide full provenance and transparency from Knowledge to Models. With access to the largest computable biological knowledge bases in the world and the most powerful BEL editor in the world, BioDati provides all the tools needed to compute, reuse, share and collaborate.</p>
+                </div>
+            </article>
+            <!-- .col-md-8 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container -->
+</section>
+{{ partial "scripts.html" . }}
+{{end}}
