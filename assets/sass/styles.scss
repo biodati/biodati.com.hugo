@@ -1825,8 +1825,9 @@ footer {
 //modals
 .modal {
   .close {
-    color: #ddd;
+    color: #fff;
     text-shadow: 0 1px 0 #060606;
+    opacity: 1 !important;
   }
   &-header {
     border-bottom: 0px;
@@ -2002,9 +2003,15 @@ footer {
     background: #212121 !important;
   }
 
-  .sub-level {
+  .top-level {
     a {
       color: #555555 !important;
+    }
+
+    .sub-level{
+      a{
+        color: #ffffff !important;
+      }
     }
   }
 }
