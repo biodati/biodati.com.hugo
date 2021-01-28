@@ -5,80 +5,125 @@ theme = "terrassa.copy"
 favicon = "favicon-32x32.png" # Relative URL
 googleAnalytics = "UA-114538730-1"
 
-[menu]
 [[menu.header]]
-identifier = "contact"
-name = "Contact Us"
-url = "#myModal"
-weight = 5
-[menu.header.params]
-    class = "contact"
+identifier = "Our Platform"
+name = "Our Platform"
+url = "/platform/"
+weight = 1
 
 [[menu.header]]
-identifier = "faq"
-name = "FAQ's"
-url = "/faqs/"
-weight = 4
+identifier = "Platform Technology"
+name = "Platform Technology"
+url = "/platformtech/"
+weight = 1
+
+[[menu.header]]
+identifier = "BioDati Demo"
+name = "launch The Demo"
+url = "/demo/"
+weight = 2
 
 [[menu.header]]
 identifier = "explore"
-name = "Explore"
+name = "Resources"
 url = ""
-weight = 6
-
-[[menu.header]]
-identifier = "blog"
-name = "Blog"
-url = "https://medium.com/biodati"
 weight = 3
 
 [[menu.header]]
 parent = "explore"
-identifier = "Our Platform"
-name = "Our Platform"
-url = "/platform/"
-weight = 0
+identifier = "blog"
+name = "Blogs"
+url = "https://medium.com/biodati"
+weight = 4
 
 [[menu.header]]
 parent = "explore"
-identifier = "Platform Technology"
-name = "Platform Technology"
-url = "/platformtech/"
-weight = 0
+identifier = "notes"
+name = "Release Notes"
+url = "https://medium.com/biodati"
+weight = 5
 
 [[menu.header]]
 parent = "explore"
-identifier = "Resources"
-name = "Resources"
+identifier = "faq"
+name = "FAQ's"
 url = "/faqs/"
-weight = 0
+weight = 6
 
 [[menu.header]]
 parent = "explore"
-identifier = "BioDati Demo"
-name = "BioDati Demo"
-url = "/demo/"
-weight = 0
+identifier = "presentations"
+name = "Presentations"
+url = "https://medium.com/biodati"
+weight = 7
+
+[[menu.header]]
+parent = "explore"
+identifier = "publications"
+name = "Publications"
+url = "https://medium.com/biodati"
+weight = 8
+
+[[menu.header]]
+parent = "explore"
+identifier = "videos"
+name = "Publications"
+url = "https://medium.com/biodati"
+weight = 9
+
+[[menu.header]]
+parent = "explore"
+identifier = "webinars"
+name = "Webinars"
+url = "https://medium.com/biodati"
+weight = 10
+
+
+
+
 
 [[menu.header]]
 identifier = "AboutUs"
 name = "About Us"
 url = "/aboutus/"
-weight = 1
+weight = 11
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "Our Team"
-name = "Our Team"
+name = "Meet The Team"
 url = "/aboutus/"
-weight = 1
+weight = 12
+
+[[menu.header]]
+parent = "AboutUs"
+identifier = "events"
+name = "Events"
+url = "/careers/"
+weight = 13
+
+[[menu.header]]
+parent = "AboutUs"
+identifier = "news"
+name = "News"
+url = "/careers/"
+weight = 14
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "careers"
 name = "Careers"
 url = "/careers/"
-weight = 2
+weight = 15
+
+[menu]
+[[menu.header]]
+identifier = "contact"
+name = "Contact Us"
+url = "#myModal"
+weight = 16
+[menu.header.params]
+    class = "contact"
 
 [[menu.footer]]
 identifier = "cookies"
