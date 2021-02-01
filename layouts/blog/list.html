@@ -1,0 +1,37 @@
+{{ define "main" }}
+<article class="post sections blog-page">
+    <header class="post__header">
+        <div class="container">
+            <div class="row">
+
+                <div class="s-title">
+                    <h4>{{ .Title }}</h4>
+                    <div class="title-line">
+                        <hr class="t-line">
+                        <hr class="b-line">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content">
+                    {{ .Content }}
+                    <div class="row">
+                        {{ range .Paginator.Pages }}
+                        <div class="col-md-4">
+                            {{ partial "widgets/post-card.html" . }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ template "_internal/pagination.html" . }}
+    </div>
+</article>
+{{ partial "contactModal.html" . }}
+{{ partial "scripts.html" . }}
+{{ end }}

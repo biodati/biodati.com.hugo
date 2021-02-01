@@ -1,0 +1,23 @@
+{{ $permalink := .Permalink }}
+<div class="card">
+    <div class="card-image">
+
+
+        <a href="{{ $permalink }}" target="_blank"><img src='{{ $.Site.BaseURL }}/img/post-imgs/{{ .Param "image" }}' /></a>
+
+    </div>
+    <div class="card-content">
+        <a class="title" href="{{ .Permalink }}" target="_blank">
+            <h4>{{ .Title }}</h4>
+        </a>
+        <span class="heading">{{ .Param "author" }} |
+            <time>{{ .PublishDate.Format "January 2, 2006"}}</time></span>
+        <div class="content">
+            {{ .Summary }}
+        </div>
+        
+    </div>
+    <a class="launch-btn" href="{{ $permalink }}" target="_blank">
+        Read more
+    </a>
+</div>

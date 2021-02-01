@@ -5,6 +5,11 @@ theme = "terrassa.copy"
 favicon = "favicon-32x32.png" # Relative URL
 googleAnalytics = "UA-114538730-1"
 
+[Params]
+  author = ""
+  image = ""
+  description = ""
+
 [[menu.header]]
 identifier = "Our Platform"
 name = "Our Platform"
@@ -33,14 +38,14 @@ weight = 3
 parent = "explore"
 identifier = "blog"
 name = "Blogs"
-url = "https://medium.com/biodati"
+url = "/blog/"
 weight = 4
 
 [[menu.header]]
 parent = "explore"
 identifier = "notes"
 name = "Release Notes"
-url = "https://medium.com/biodati"
+url = "/releaseNotes/"
 weight = 5
 
 [[menu.header]]
@@ -54,28 +59,28 @@ weight = 6
 parent = "explore"
 identifier = "presentations"
 name = "Presentations"
-url = "https://medium.com/biodati"
+url = "/presentations/"
 weight = 7
 
 [[menu.header]]
 parent = "explore"
 identifier = "publications"
 name = "Publications"
-url = "https://medium.com/biodati"
+url = "/publications/"
 weight = 8
 
 [[menu.header]]
 parent = "explore"
 identifier = "videos"
-name = "Publications"
-url = "https://medium.com/biodati"
+name = "Videos"
+url = "/videos/"
 weight = 9
 
 [[menu.header]]
 parent = "explore"
 identifier = "webinars"
 name = "Webinars"
-url = "https://medium.com/biodati"
+url = "/webinars/"
 weight = 10
 
 
