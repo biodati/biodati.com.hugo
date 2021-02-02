@@ -1,11 +1,17 @@
 {{ define "main" }}
-<section id="content-block" class="block">
+<section id="content-block" class="block policy-page">
   <div class="container">
     <div class="row">
       <article class="col-md-12">
         <div class="col-md-12">
-          <h2>Privacy Policy</h2>
-        </div>
+          <div class="s-title about-page-title">
+              <h4>Privacy Policy</h4>
+              <div class="title-line">
+                  <hr class="t-line">
+                  <hr class="b-line">
+              </div>
+          </div>
+      </div>
         <div class="col-md-12">
           <p>
             <strong>1.</strong> BioDati, Inc., 1501 Main Street, 07065 (BD) owns
@@ -95,4 +101,6 @@
     </div>
   </div>
 </section>
+{{ partial "contactModal.html" . }}
+{{ partial "scripts.html" . }}
 {{ end }}

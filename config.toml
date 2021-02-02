@@ -104,14 +104,14 @@ weight = 12
 parent = "AboutUs"
 identifier = "events"
 name = "Events"
-url = "/careers/"
+url = "/events/"
 weight = 13
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "news"
 name = "News"
-url = "/careers/"
+url = "/news/"
 weight = 14
 
 [[menu.header]]
