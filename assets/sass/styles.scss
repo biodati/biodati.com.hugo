@@ -115,6 +115,11 @@ img {
     text-transform: uppercase;
     font-size: 38px;
     font-weight: 700;
+    line-height: 38px;
+  }
+
+  .heading {
+    font-weight: bold;
   }
 }
 
@@ -927,10 +932,28 @@ img {
     background-position: 50% 100%;
     opacity: 0.15;
   }
+
+  ul {
+    li {
+      list-style-type: disc;
+      font-weight: 400;
+      font-size: 16px;
+      color: #585858;
+    }
+  }
+}
+
+.platform-lists {
+  padding: 20px;
+  padding-left: 40px;
+  max-width: 300px;
+  background: rgba(200, 200, 200, 0.1);
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .platform-title {
-  margin: 10px 0;
+  margin: 25px 0 10px;
   font-family: poppins, sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -945,8 +968,8 @@ img {
 
 .platform-img {
   width: 100%;
-  max-width: 780px;
-  margin: 0 auto;
+  max-width: 855px;
+  margin: 0 auto 60px;
 }
 
 .platform-page-title {
@@ -1004,6 +1027,104 @@ img {
   text-transform: uppercase;
   font-size: 38px;
   font-weight: 700;
+}
+
+.cookies-page {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/blue_node_bg.png);
+    background-position: 50% 100%;
+    opacity: 0.15;
+  }
+  padding-bottom: 60px;
+}
+
+.policy-page {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/blue_node_bg.png);
+    background-position: 50% 100%;
+    opacity: 0.15;
+  }
+  padding-bottom: 60px;
+}
+
+.blog-posts {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/blue_node_bg.png);
+    background-position: 50% 100%;
+    opacity: 0.15;
+  }
+}
+
+.blog-posts-container {
+  max-width: 800px;
+  margin: 0 auto;
+
+  h2, h3 {
+    margin: 30px 0 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    max-width: 800px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #585858;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    &:first-of-type {
+      margin-top: 0px;
+    }
+  }
+
+  ul, ol {
+    padding: 20px;
+    background: rgba(200, 200, 200, 0.1);
+    li {
+      list-style-type: disc;
+      margin-left: 20px;
+      &:last-of-type {
+        p {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  ol{
+    li{
+      list-style-type: decimal;
+    }
+  }
+}
+
+.blog-posts-thumb {
+  width: 100%;
+  margin: -20px 0px 30px;
 }
 
 .about-page {
@@ -2125,7 +2246,7 @@ footer {
 
     .sub-level {
       a {
-        color: #ffffff !important;
+        color: #555555 !important;
       }
     }
   }
