@@ -1,26 +1,60 @@
 {{define "main"}}
-<section id="content-block" class="block about-page">
-    <div class="container">
-        <div class="row">
-            <article class="col-md-12">
-                <div class="col-md-12">
-                    <div class="s-title about-page-title">
-                        <h4>Presentations</h4>
-                        <div class="title-line">
-                            <hr class="t-line">
-                            <hr class="b-line">
-                        </div>
+<section id="content-block" class="block present-page">
+    <header class="post__header">
+        <div class="container">
+            <div class="row">
+
+                <div class="s-title about-page-title">
+                    <h4>{{ .Title }}</h4>
+                    <div class="title-line">
+                        <hr class="t-line">
+                        <hr class="b-line">
                     </div>
                 </div>
-                <div class="col-md-12 ">
-
-                </div>
-            </article>
-            <!-- .col-md-8 -->
+            </div>
         </div>
-        <!-- .row -->
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 card">
+                <div class="card-image">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="card-content">
+                    <h2>Biodati Microbiome Poster - March 2019</h2>
+                    
+                </div>
+                <a class="launch-btn" href="{{ $.Site.BaseURL }}/presentations/_BiodatiMicrobiomePoster-March2019.pdf" target="_blank">
+                    Download
+                </a>
+            </div>
+            <div class="col-md-4 card">
+                <div class="card-image">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="card-content">
+                    <h2>2019 ISCB - International Society for Computational Biology presentation</h2>
+                    
+                </div>
+                <a class="launch-btn" href="{{ $.Site.BaseURL }}/presentations/2019 ISCB - International Society for Computational Biology presentation.pdf" target="_blank">
+                    Download
+                </a>
+            </div>
+            <div class="col-md-4 card">
+                <div class="card-image">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="card-content">
+                    <h2>BELbio - BioITWorld - May 2018</h2>
+                    
+                </div>
+                <a class="launch-btn" href="{{ $.Site.BaseURL }}/presentations/BELbio-BioITWorld-May2018.pdf" target="_blank">
+                    Download
+                </a>
+            </div>
+        </div>
+        {{ template "_internal/pagination.html" . }}
     </div>
-    <!-- .container -->
 </section>
 {{ partial "contactModal.html" . }}
 {{ partial "scripts.html" . }}
