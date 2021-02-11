@@ -3,20 +3,29 @@
     <header class="post__header">
         <div class="container">
             <div class="row">
-
-                <div class="s-title about-page-title">
-                    <h4>{{ .Title }}</h4>
-                    <div class="title-line">
-                        <hr class="t-line">
-                        <hr class="b-line">
+                <article class="col-md-12">
+                    <div class="col-md-12">
+                        <div class="s-title careers-page-title">
+                            <h4>Events</h4>
+                            <div class="title-line">
+                                <hr class="t-line">
+                                <hr class="b-line">
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="col-md-12 ">
+                        <p class="careers-title" style="font-weight: 800;">2021 is going to be an exciting year! Check back soon for our upcoming events!</p>
+                    </div>
+                </article>
+                <!-- .col-md-8 -->
             </div>
         </div>
     </header>
     <div class="container">
+        
         <div class="row">
-            <div class="col-md-12 news-card">
+            
+            <!--<div class="col-md-12 news-card">
                 <div class="news-card-date">
                     <span>April 2020</span>
                 </div>
@@ -43,7 +52,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
         {{ template "_internal/pagination.html" . }}
     </div>

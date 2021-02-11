@@ -1,0 +1,45 @@
+{{ define "main" }}
+<article class="post sections blog-posts">
+    <header class="post__header">
+        <div class="container blog-posts-container">
+            <div class="row">
+
+                <div class="s-title">
+                    <h4>{{ .Title }}</h4>
+                    <div class="title-line">
+                        <hr class="t-line">
+                        <hr class="b-line">
+                    </div>
+                    {{ if ne .Type "page" }}
+                    <p class="post__date date">
+                        <span class="heading">{{ .Param "author" }} |
+                            <time>{{ .PublishDate.Format "January 2, 2006"}}</time></span>
+                    </p>
+                    {{ end }}
+                </div>
+                <div class="col-xs-12">
+                    <img class="blog-posts-thumb" src='{{ $.Site.BaseURL }}/img/post-imgs/{{ .Param "image" }}' />
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <div class="container blog-posts-container">
+        <div class="row">
+            <div class="col-md-12">
+                {{ if ne .Type "page" }}
+                <main class="post__body">
+                    {{ .Content }}
+                </main>
+                {{ else }}
+                <main class="post__body" style="margin-bottom: 3rem;">
+                    {{ .Content }}
+                </main>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</article>
+{{ partial "contactModal.html" . }}
+{{ partial "scripts.html" . }}
+{{ end }}
