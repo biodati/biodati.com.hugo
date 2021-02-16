@@ -36,52 +36,59 @@ weight = 3
 
 [[menu.header]]
 parent = "explore"
+identifier = "bel"
+name = "BEL Resources"
+url = "/belresources/"
+weight = 4
+
+[[menu.header]]
+parent = "explore"
 identifier = "blog"
 name = "Blogs"
 url = "/blog/"
-weight = 4
+weight = 5
 
 [[menu.header]]
 parent = "explore"
 identifier = "notes"
 name = "Release Notes"
 url = "/releaseNotes/"
-weight = 5
+weight = 6
 
 [[menu.header]]
 parent = "explore"
 identifier = "faq"
 name = "FAQ's"
 url = "/faqs/"
-weight = 6
+weight = 7
 
 [[menu.header]]
 parent = "explore"
 identifier = "presentations"
 name = "Presentations"
 url = "/presentations/"
-weight = 7
+weight = 8
 
 [[menu.header]]
 parent = "explore"
 identifier = "publications"
 name = "Publications"
 url = "/publications/"
-weight = 8
+weight = 9
 
 [[menu.header]]
 parent = "explore"
 identifier = "videos"
 name = "Videos"
 url = "/videos/"
-weight = 9
+weight = 10
 
 [[menu.header]]
 parent = "explore"
 identifier = "webinars"
 name = "Webinars"
 url = "/webinars/"
-weight = 10
+weight = 11
 
 
 
@@ -91,42 +98,42 @@ weight = 10
 identifier = "AboutUs"
 name = "About Us"
 url = "/aboutus/"
-weight = 11
+weight = 12
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "Our Team"
 name = "Meet The Team"
 url = "/aboutus/"
-weight = 12
+weight = 13
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "events"
 name = "Events"
 url = "/events/"
-weight = 13
+weight = 14
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "news"
 name = "News"
 url = "/news/"
-weight = 14
+weight = 15
 
 [[menu.header]]
 parent = "AboutUs"
 identifier = "careers"
 name = "Careers"
 url = "/careers/"
-weight = 15
+weight = 16
 
 [menu]
 [[menu.header]]
 identifier = "contact"
 name = "Contact Us"
 url = "#myModal"
-weight = 16
+weight = 17
 [menu.header.params]
     class = "contact"
 
