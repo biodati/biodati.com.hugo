@@ -1,24 +1,98 @@
 {{define "main"}}
-<section id="content-block" class="block about-page">
-    <div class="container">
-        <div class="row">
-            <article class="col-md-12">
-                <div class="col-md-12">
-                    <div class="s-title about-page-title">
-                        <h4>Publications</h4>
-                        <div class="title-line">
-                            <hr class="t-line">
-                            <hr class="b-line">
+<section id="content-block" class="block sections present-page">
+    <header class="post__header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="col-xs-12">
+                        <div class="s-title present-page-title">
+                            <h4>{{ .Title }}</h4>
+                            <div class="title-line">
+                                <hr class="t-line">
+                                <hr class="b-line">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 ">
 
-                </div>
-            </article>
-            <!-- .col-md-8 -->
+            </div>
         </div>
-        <!-- .row -->
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-md-6 card pub">
+                    <div class="card-image">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <div class="card-content">
+                        <h2><strong>Drug2ways: Reasoning over causal paths in biological networks for drug
+                                discovery</strong>
+                            Rivas-Barragan D, Mubeen S, Bernat FG, Hofmann-Apitius M, Domingo-Fernandez D
+                            2020</h2>
+
+                    </div>
+                    <a class="launch-btn" href="http://biorxiv.org/lookup/doi/10.1101/2020.06.07.138388"
+                        target="_blank">
+                        View
+                    </a>
+                </div>
+                <div class="col-md-6 card pub">
+                    <div class="card-image">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <div class="card-content">
+                        <h2><strong>Combining relation extraction with function detection for BEL statement
+                                extraction</strong>
+                            Liu S, Cheng W, Qian L, Zhou G
+                            Database, 2019</h2>
+
+                    </div>
+                    <a class="launch-btn"
+                        href="https://academic.oup.com/database/article/doi/10.1093/database/bay133/5277249"
+                        target="_blank">
+                        View
+                    </a>
+                </div>
+                <div class="col-md-6 card pub">
+                    <div class="card-image">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <div class="card-content">
+                        <h2><strong>The extraction of complex relationships and their conversion to biological
+                                expression language (BEL) overview of the BioCreative VI (2017) BEL track</strong>
+                            Madan S, Szostak J, Komandur Elayavilli R, Tsai RT, Ali M, Qian L, Rastegar-Mojarad M, Hoeng
+                            J, Fluck J
+                            Database, 2019</h2>
+
+                    </div>
+                    <a class="launch-btn"
+                        href="https://academic.oup.com/database/article/doi/10.1093/database/baz084/5585579"
+                        target="_blank">
+                        View
+                    </a>
+                </div>
+                <div class="col-md-6 card pub">
+                    <div class="card-image">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <div class="card-content">
+                        <h2><strong>BEL Commons: an environment for exploration and analysis of networks encoded in
+                                Biological Expression Language</strong>
+                            Hoyt CT, Domingo-Fernandez D, Hofmann-Apitius M
+                            2018</h2>
+
+                    </div>
+                    <a class="launch-btn"
+                        href="http://biorxiv.org/lookup/doi/10.1101/288274"
+                        target="_blank">
+                        View
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        {{ template "_internal/pagination.html" . }}
     </div>
     <!-- .container -->
 </section>

@@ -15,7 +15,7 @@ $(document).ready(function () {
     }
   });
 
-  //// SMOTH SCROLL
+  //// SMOOTH SCROLL
   $.scrollIt({
     topOffset: -120
   });

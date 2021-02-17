@@ -158,12 +158,18 @@ $greenBtn: #20c583;
 }
 
 .demo {
+
+  .background-container{
+    max-width: 1800px;
+    margin: 0 auto;
+  }
   #demo-left {
-    padding: 35px 35px;
+    position: initial;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: calc(100vh - 154px);
+    //justify-content: space-between;
+    min-height: calc(100vh - 107px);
 
     &:before {
       content: "";
@@ -174,15 +180,27 @@ $greenBtn: #20c583;
       bottom: 0;
       background-image: url(../img/blue_node_bg.png);
       background-position: 50% 100%;
-      opacity: 0.3;
+      opacity: 0.15;
+      z-index: -2;
+    }
+
+    .demo-page-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      font-family: poppins, sans-serif;
+      text-transform: uppercase;
+      font-size: 38px;
+      font-weight: 700;
+      padding-left: 15px;
     }
     .demo-paragraph {
-      margin: 0px 0 35px;
-      line-height: 20px;
       font-weight: 400;
-      font-size: 13px;
+      font-size: 16px;
       color: #585858;
+      margin-bottom: 30px;
     }
+
+    
 
     .card {
       border: 1px solid #e8e8e8;
@@ -203,6 +221,10 @@ $greenBtn: #20c583;
           margin-left: 15px;
         }
       }
+    }
+
+    .alert-wrapper{
+      margin-top: auto;
     }
 
     .launch-btn {
@@ -231,32 +253,42 @@ $greenBtn: #20c583;
 
   #demo-right {
     color: #ddd !important;
-    padding: 35px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: calc(100vh - 154px);
+    //justify-content: space-between;
+    position: initial;
+    min-height: calc(100vh - 107px);
 
     &:before {
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
       right: 0;
       bottom: 0;
       background: #212121;
       background-position: 50% 100%;
       z-index: -1;
     }
-    .s-title {
-      color: #fff;
-      margin-bottom: 20px;
 
-      h4 {
-        font-size: 20px;
-        color: #ddd;
-        text-transform: capitalize;
+    
+    
+
+    .demo-page-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      font-family: poppins, sans-serif;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 700;
+      color: #ddd;
+      padding-left: 15px;
+
+      h4{
+        font-size: 28px;
       }
+
       .t-line,
       .b-line {
         border-color: mediumseagreen;
@@ -270,9 +302,18 @@ $greenBtn: #20c583;
       font-size: 15px;
     }
 
-    .demo-paragraph-right-2 {
+    .demo-paragraph-2 {
+      font-weight: 400;
       font-size: 14px;
+      color: #ffffff;
       line-height: 16px;
+    }
+
+    .demo-paragraph {
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 30px;
     }
 
     #chat-action {
@@ -281,7 +322,8 @@ $greenBtn: #20c583;
       justify-content: space-evenly;
       align-items: center;
       margin-bottom: 40px;
-      
+      margin-top:auto;
+      padding-left: 15px;
 
       img {
         margin-right: 15px;
@@ -292,22 +334,8 @@ $greenBtn: #20c583;
       display: flex;
       justify-content: center;
       .video {
-        @media (min-width: 300px) {
-          height: 202px;
-          width: 350px;
-        }
-        @media (min-width: 768px) {
-          height: 322px;
-          width: 570px;
-        }
-        @media (min-width: 992px) {
-          height: 222px;
-          width: 370px;
-        }
-        @media (min-width: 1198px) {
-          height: 322px;
-          width: 570px;
-        }
+        width: 100%;
+        margin-bottom: 25px;
       }
     }
   }
@@ -315,12 +343,11 @@ $greenBtn: #20c583;
   .alert {
     display: flex;
     justify-content: space-evenly;
-    span{
+    span {
       font-size: 14px;
       line-height: 16px;
     }
-      
-    
+
     img {
       padding-right: 15px;
     }
@@ -341,14 +368,26 @@ $greenBtn: #20c583;
 }
 
 @media (max-width: 992px) {
+
+  .background-container{
+    margin: 0 -15px !important;
+  }
+
   #demo-left {
-    text-align: center;
+    position: relative !important;
+    text-align: left;
+    min-height: unset !important;
     #demo-card-container {
       text-align: left;
     }
   }
   #demo-right {
-    text-align: center;
+    position: relative !important;
+    min-height: unset !important;
+    &:before{
+      left: 0 !important;
+    }
+    text-align: left;
   }
   #clean-up-notice-container {
     .reset-icon {
