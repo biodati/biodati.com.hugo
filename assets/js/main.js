@@ -29,7 +29,7 @@ $(document).ready(function () {
 
 
   //Open modal on link
-  $('#ContactUs').on('click', function (e) {
+  $('.ContactUs').on('click', function (e) {
     $('#contactModal').modal('show');
   })
 
